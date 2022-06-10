@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane fx:id="stack" alignment="TOP_LEFT" prefHeight="600.0" prefWidth="800.0" stylesheets="@estiloPrincipal.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ococlimassystem.ControladorVistaPrincipal">
+   <children>
+      <TabPane prefHeight="200.0" prefWidth="200.0" stylesheets="@estiloPrincipal.css" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Suministros">
+               <content>
+                  <HBox>
+                     <children>
+                        <BorderPane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: linear-gradient(#ffffff 1%, #3b83bd 65%, #25415a 100%); -fx-border-color: #A2A2A2;" HBox.hgrow="ALWAYS">
+                           <center>
+                              <AnchorPane id="AnchorPane" fx:id="Anchor" prefHeight="452.0" prefWidth="665.0" stylesheets="@estiloPrincipal.css" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Button fx:id="botonInventario" alignment="BASELINE_LEFT" graphicTextGap="0.0" layoutX="56.0" layoutY="75.0" mnemonicParsing="false" onAction="#abrirInventario" prefHeight="45.0" prefWidth="165.0" text="     Inventarios" />
+                                    <Button fx:id="botonEntradas" layoutX="56.0" layoutY="178.0" mnemonicParsing="false" onAction="#abrirEntradas" prefHeight="75.0" prefWidth="83.0" text="Entradas" />
+                                    <Button fx:id="botonCatalogos" layoutX="398.0" layoutY="14.0" mnemonicParsing="false" onAction="#abrirCatalogos" prefHeight="25.0" prefWidth="117.0" text="Catalogos" />
+                                    <Button fx:id="botonSalidas" layoutX="56.0" layoutY="277.0" mnemonicParsing="false" onAction="#abrirSalidas" prefHeight="75.0" prefWidth="83.0" text="Salidas" />
+                                    <Button fx:id="botonIPrestamos" layoutX="184.0" layoutY="181.0" mnemonicParsing="false" onAction="#abrirPrestamos" prefHeight="75.0" prefWidth="83.0" text="Prestamos" />
+                                    <HBox layoutX="6.0" layoutY="402.0">
+                                       <children>
+                                          <Pane layoutX="6.0" layoutY="402.0" prefHeight="34.0" prefWidth="439.0" />
+                                       </children>
+                                    </HBox>
+                                    <Pane layoutX="614.0" layoutY="2.0" prefHeight="351.0" prefWidth="43.0" />
+                                 </children>
+                              </AnchorPane>
+                           </center>
+                           <bottom>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="TOP_RIGHT">
+                                 <children>
+                                    <ImageView fx:id="ImagenLogoPrincipal" fitHeight="124.0" fitWidth="365.0" pickOnBounds="true" preserveRatio="true" />
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets bottom="15.0" right="15.0" />
+                                 </padding>
+                              </HBox>
+                           </bottom>
+                           <right>
+                              <VBox prefHeight="471.0" prefWidth="141.0" BorderPane.alignment="CENTER" />
+                           </right>
+                        </BorderPane>
+                     </children>
+                  </HBox>
+               </content>
+          </Tab>
+          <Tab text="Ventas">
+               <content>
+                  <HBox prefHeight="100.0" prefWidth="200.0">
+                     <children>
+                        <BorderPane prefHeight="571.0" prefWidth="843.0" style="-fx-background-color: linear-gradient(#ffffff 1%, #00d5b8 65%, #009598 100%); -fx-border-color: #a2a2a2;" HBox.hgrow="ALWAYS">
+                           <center>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <Button fx:id="botonProspectos" layoutX="36.0" layoutY="40.0" mnemonicParsing="false" onAction="#abrirProspectos" prefHeight="75.0" prefWidth="114.0" text="Prospectos" />
+                                    <Button fx:id="botonPreoportunidades" layoutX="36.0" layoutY="140.0" mnemonicParsing="false" onAction="#abrirPreoportunidades" prefHeight="75.0" prefWidth="114.0" text="Preoportunidades" />
+                                    <Button fx:id="botonCotizaciones" layoutX="36.0" layoutY="236.0" mnemonicParsing="false" onAction="#abrirCotizaciones" prefHeight="75.0" prefWidth="114.0" text="Cotizaciones" />
+                                 </children></AnchorPane>
+                           </center>
+                           <bottom>
+                              <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+                                 <children>
+                                    <ImageView fx:id="ImagenLogoPrincipal2" fitHeight="124.0" fitWidth="365.0" pickOnBounds="true" preserveRatio="true" />
+                                 </children>
+                                 <BorderPane.margin>
+                                    <Insets bottom="15.0" right="15.0" />
+                                 </BorderPane.margin>
+                              </HBox>
+                           </bottom>
+                        </BorderPane>
+                     </children>
+                  </HBox>
+               </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</StackPane>

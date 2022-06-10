@@ -1,0 +1,556 @@
+Version 0.7 10/12/2020
+-Se añadio el modulo de prestamos
+-Se agrego la ventana principal de prestamos
+
+Version 0.8 11/12/2020
+-Se creo la ventana para agregar prestamos
+-Se agrego el catalogo de herramientas
+-Se acomodo la ventana de salidas para que se adapte a pantalla completa
+-Quedo en observacion como llevar el logo de la ventana principal hacia la esquina
+-Se soluciono el error de las ventanas de agregar entradas, salidas y prestamos 
+ de que la ventana se cerraba aunque se elijiera la opcion de cancelar.
+
+Version 0.9 14/12/2020
+*Se arreglo el problema de la pantalla principal, de que al momento de expandirla, el logotipo no cambiaba de lugar(se hizo con un borderPane) 
+*Se diseño la ventana para seleccionar préstamos para devolver
+
+Version 0.10 16/12/2020
+-Se hizo el diseño de la ventana principal de devoluciones
+-Quedo en observacion como hacer la parte de las devolcuiones parciales
+
+Version 0.11 18/12/2020
+-Se acomodaron las ventanas de inventarios, salidas y prestamos para que adaptaran
+ el tamaño de sus elementos a la hora de ser ampliadas.
+-Se agrego como fondo de la ventana de inventarios, una imagen con la marca de agua de 
+ ococlimas usando el BackgroundImage (Esta en un proyecto pruebas con fondo).
+
+Version 0.12 18/01/2021
+-Se agrego a la ventana de entradas y salidas, un evento en los textFields de proveedores y productos
+ Para que abriera la ventana de catalogos al dar enter.
+-Se tiene en observacion el buscar una manera de que a ventana de catalogos retorne los datos basicos del objeto seleccionado
+ como son la clave primaria y su identificador
+
+Version 0.13 20/01/2021
+-Se arreglo el problema de las listas vacias al seleccionar un elemento en los catalogos desde 
+ la ventana de agregar entradas y agregar salidas.
+-Se agrego un boton para salir en las ventanas principales de entradas, salidas e inventarios.
+-Se valido que los eventos de la ventana de catalogos a la hora de seleccionar un elemento, no se ejecutaran
+ a la hora de abrir los catalogos desde la ventana principal.
+
+Version 0.14 22/01/2021
+-Se agregaron listeners al textField para buscar datos en la venatana de Catalogos, filtrando los datos 
+ de las listas y agregandolos a una FilteredList.
+-Se añadieron datos adicionales a las listas de los catalogos.
+
+Version 0.15 25/02/2021
+-Se diseñaron las ventanas de listado de prospectos, registro de prospectos, listado de seguimientos de prospectos
+ y registro de seguimientos.
+-Se hizo el vinculo entre ventanas, para controlar cuando y donde tienen que abrirse.
+
+Version 0.16 27/01/2021
+-Se agregaron los mensajes de confirmacion al salir y guardar en las ventanas de registro de prospectos
+ y registro de seguimiento
+-Se creo una clase llamada prospectos, con los atributos que seran almacenados en la tabla
+-Se agrego un obejto a la tabla de prospectos para futuras pruebas.
+-Se agrego la imagen de fondo a la venta de prospectos y seguimientos.
+-Se modificaron las ventanas para que estas pudieran ser ampliadas.
+-Se agrego un logo de prueba a la ventana de prospectos.
+
+Version 0.17 02/02/2021
+-Se agregaron los catalogos de vendedores y empresas.
+-Se crearon las clases de Vendedores y Empresas en la carpeta de catalogos.
+-Se creo una tabla hibrida que muestra los datos de un prospecto y sus seguimientos, permitiendo agregar
+ seguimientos y preoportunidades desde esta.
+-Se elimino la Ventana de listado de Seguimientos.
+-Se hicieron los respectivos vinculos entre ventanas, donde la ventana hibirda es abierta al dar doble 
+ click sobre un prospecto o enter, o por medio del boton de seguimiento.
+-SE modificaron los campos de status y division asignada para que fueran listas desplegables(En la ventana hibrida y 
+ en la de registro de prospectos) 
+
+Version 0.18 03/02/2021
+-Se diseñaron las ventanas de listado de preoportunidades, registro de preoportunidades, seguimiento de preoportunidades
+ y listado de preoportunidades pendientes.
+-Se agrego a la vista princiál el boton para entrar a preoportunidades en la pestaña de ventas
+-Se hicieron las respectivas vinculaciones entre ventanas para que abran donde les corresponda
+
+Version 0.19 05/02/2021
+-Se agrego el fondo a la ventana de Listado de preoportunidades
+-SE agregaron las validaciones al salir y guardar en la ventana de Seguimiento de preoportunidades y registro
+ de preoportunidades.
+-Se pusieron los iconos correspondientes en las ventanas de Listado de prospectos y listado de preoportunidades
+-Se creo una clase para crear objetos de tipo preoportunidades
+-Se valido que al dar doble click o presionar enter en la tabla de listado de preoportunidades, se abra la ventana
+ de seguimiento de preoportunidades.
+-Se valido que en la ventana de VistaConsultaPropspectos, fuera abierta la ventana de registro de preoportunidades
+ al presionar el boton de agregar preoportunidad.
+
+Version 0.20 08/02/2021
+-Se descarto la ventana de seguimiento de preoportunidades
+-Esta ultima fue reemplazada por una ventana hibrida(VistaConsultaYSeguimientoPreoportunidades).
+-Se agrego el campo de empresa en la ventana de registro de prospectos y se añadieron los botones de 3 puntos
+ para seleccionar un vendedor o una empresa desde el catalogo
+-Se agrego el boton de los 3 puntos para seleccionar vendedores desde el catalogo en la ventana de registro de 
+ preoportunidades y en la ventana hibrida.
+-Se hizo la ventana de registro de seguimientos de preoportunidades y se hicieron las respectivas vinculaciones entre ventanas
+ para que abran donde corresponde.
+-Se agregaron eventos en la tabla de listado de preoportunidades, para que la ventana hibrida abra al dar doble click
+ o enter
+-Se agrego un evento al boton de seguimiento del listado de preoportinidades pendientes para que abriera 
+ la ventana hibrida.
+
+Version 0.21 10/02/2021
+-Se habilitaron los eventos en las ventanas de registro de prospectos, registro de preoportunidades, consulta
+ de prospectos, y consulta de preoportunidades. Para que los elementos que tuvieran el boton de 3 puntos
+ pudieran ser seleccionados desde sus respectivos catalogos.
+-Se adapto la ventana de listado de prospectos para que pueda ser abierta por otras ventanas a parte de la principal
+ y retorne los datos del prospecto seleccionado.
+
+Version 0.22 12/02/2021
+-Se crearon los catalogos de equipos y servicios.
+-Se agregaron a al listado de catalogos, con sus respectivos datos de muestra y listeners
+
+Version 0.23 15/02/2021
+-SE diseñaron todas las ventanas para agregar datos para todos los catalogos, exepto el de servicios
+-Se hicieron las repectivas vinculaciones para que cada ventana abriese cuando le corresponde.
+
+Version 0.24 18/02/2021
+-Se agregaron la validaciones al cerrar y guardar en todas las ventanas de agregar en catalogos.
+-Se programo la parte de agregar elementos a los catalogos desde sus respectivas ventanas para agregar.
+-Se hicieron cambios en los tipos de dato de algunas claves primarias de los objetos de los catalogos
+-Se modifico el diseño de la ventana de agregar productos para que el campo de descriopcion fuera mas grande
+-*Falta hacer esto mismo en la de herramientas.
+
+Version 0.25 19/02/2021
+-Se hicieron pequeñas modificaciones en el diseño de las algunas venatnas de agregar en vatalogos
+-SE añadio un nuevo metodo en cada una de las ventanas de agregar, para que estas puedan ser abiertas
+ para modificar datos.
+-Se agrego un switch en el metodo de guardar de cada una de las ventanas de agregar en catalogos, el cual
+ controla si el boton esta siendo para agregar o para modificar.
+-Se agrego una validacion en la ventana de catalogos, para que los botones de modificar y eliminar, esten desactivados
+ hasta que sea seleccionado un elemento.
+-Se decubruio que funciona el control Z para deshacer cambios en textFields, y que se puede utilizar el click
+ derecho, para copiar, pegar, suprimir, seleccionar, etc.
+
+Version 0.26 22/02/2021
+-Se agrego el boton de archivos adjuntos a la ventana de ´registro de seguimiento de preoportunidades, 
+ asi como la checkBox del problema.
+-Se modifico el diseño de la ventana de registro de prospectos, para que fuera mas clara.
+-Se programo que se pudiera biscar por todos los campos en la ventana de catalogos.
+-Se agrego el campo de coste por dia, al catalogo de personal.
+-Se agregaron los campos de numero, calle, CP, municipio, estado y pais al catalogo de empresas.
+-Se diseño una ventana simple para mostrar los catalogos pequeños de un solo campo como son unidad, tipo de proveedor
+ etc, etc.
+**Quedo pendiente hacer los respectivos cambios a la ventana de agregar y modificar del catalogo de empresas,
+  para adaptarla a el cambio que hubo en los campos.
+
+Version 0.27 24/02/2021
+-Se elimino el campo de usuario en el catalogo de equipos.
+-Se hicieron las respectivas modificaciones a la ventana para agregar empresas en los catalogos, para adaptarla
+ a los nuevos campos.
+-Se modificaron los datos a retornar en el catalogo de empresas, para hacer posible el llenado de los campos
+ de los datos de la empresa en la ventana de registro de prospectos.
+-Se investigo y sera aplicado en el futuro como controlar el orden de la tabulacion.
+
+Version 0.28 25/02/2021
+-Se modificaron las venatanas de agregar de los catalogos de productos, proveedores y vendedores para agregarles
+ los 3 puntos a unidad, tipo de proveedor y division asignada
+-Se controlo que al dar click en el boton de los 3 puntos antes mencionados, se abriera una ventana con un listado
+ simple para que el usuario seleccione un elemento.
+-En la ventana de catalogos simples, se programo la parte para agregar, modificar y eliminar elementos. Asi
+ como la busqueda de elementos.
+-Se agrego a la pantalla principal el boton de cotizaciones, el cual abre el listado de cotizaciones.
+
+Version 0.28.1 01/03/2021
+-Se modificaron los botones de la vista principal, agregandole iconos a los botones.
+-Se cambiaron los tamaños de los iconos a 150*150 megapixeles.
+
+Version 0.29 03/03/2021
+-Se diseñaron las ventanas de agregar cotizaciones, y las secciones de equipos u productos de la ventana de
+ agregar secciones.
+-Se investigo como hacer uso de las TreeTableView.
+-Se realizo un prototipo de esto ultimo.
+
+Version 0.30 04/03/2021 | Version 0.2 de proyecto modular
+-Se programo que las ventanas de cotizaciones abran en sus lugares correspondientes
+-Se diseño por codigo una pequeña ventana para accesar el nombre de las secciones
+-Se trajeron las clases de entradas, salidas, productos de inventario y herramientaas de inventario desde 
+ la version 0.1 de ococlimasSystemModular.
+-Se agregaron los id a los elementos de las venatanas de inventarios, entradas y salidas.
+-Se perfecciono el guardar salidas.
+-Se agregaron dos botones pequeños con iconos en la ventana de agregar salidas, para eliminar y modificar 
+ productos en la tabla
+-Se pueden ya agregar productos a la tabla de productos en la ventana de agregar salidas.
+-Se intento programar la parte de modificar los elementos de la tabla en agregar salidas
+**Quedo en observacion el porque el elemento no es modificado a pesar de que no es nulo.
+
+Version 0.31 08/03/2021  | Version 0.3 de proyecto modular
+-Se soluciono el problema al modificar productos de la tabla de productos en agregar salidas.
+-Se agregaron pop up tooltips a los botones de las vistas de agregar salidas y agregar entradas.
+-Se programo la parte de modificar y eliminar salidas.
+-Se programaron las partes para agregar, modificar y eliminar entradas
+**Quedo en observacion que al agregar un producto en la tabla de productos en la vista de agregar entradas,
+ a pesar de que se haya introducido un costo personalizado, el objeto se guarda con el costo que tiene en el catalogo.
+
+Version 0.32 11/03/2021 | Version 0.4 de proyecto modular
+-Se soluciono el problema del costo **
+-Se programo la parte de eliminar en catalogos
+-Se modifico el espacio que estaba la tabla de catalogos
+-Se comenzo el modelado de la base de datos
+
+Version 0.33 15/03/2021 | Version 0.5 de proyecto modular
+**Checar la parte de salidas, seleccionar productos desde inventarios en lugar desde los catalogos
+**Permitir que en las entradas se puedan seleccionar herramientas.
+**
+
+Version 0.34 17/03/2021 | Version 0.6 de proyecto modular
+-Se actualizaron los datos de los catalogos para que hagan alusion a datos reales
+-Se realizo el modelo relacional de la base de datos y nomalizacion
+**Quedo pendiente lo de las tabulaciones en las ventanas
+
+Version 0.35 18/03/2021
+-Se hicieron las clases de contratistas y de servicios de contratistas
+-Se agrego el catalogo de contratistas.
+-Se programaron las partes de agregar y modificar en el catalogo de contratistas
+-Se modifico la ventana de agregar cotizaciones, agregandole los campos necesarios especificos.
+**Quedo pendiente la parte de eliminar en el catalogo de contratistas.
+**Quedo pendiente la parte de agregar servicios a los contratistas.
+**Quedo pendiente lo de las tabulaciones en las ventanas.
+
+Version 0.36 22/03/2021 | Version 0.7 modular
+-Se incializaron las columnas de la tabla de la ventana de inventarios y se agregaron datos
+-Se agrego a la tabla de inventarios lo necesario para hacer retorno de datos seleccionados
+-Se modifico la ventana de agregar salidas, para que tome los productos  y herramientas desde el inventario
+-Se controlo el hecho de que al seleccionar una herramienta, al no tener costo, el campo de costo de 
+ se deshbilite y guarde en la tabla de productos un "---". Todo esto en la ventana de agregar salidas.
+-Se agregaron validaciones a las ventanas de agregar de los catalogos que hagan uso de campos que solo 
+ admitan numeros.
+**Quedo pendiente el hecho de que en la ventana de entradas puedan ser seleccionados herramientas y productos
+**Quedo el dilema : las herramientas tienen costo o no tienen costo.
+**Quedo pendiente la parte de eliminar en el catalogo de contratistas.
+**Quedo pendiente la parte de agregar servicios a los contratistas.
+**Quedo pendiente lo de las tabulaciones en las ventanas
+
+Version 0.37 24/03/2021 | Version 0.8 modular
+-Se modifico la ventana de agregar entradas para que pueda seleccionar productos y herramientas desde el inventario.
+-Se realizo la base de datos en mysql en base al modelo relacional adjunto.
+**Quedo el dilema : las herramientas tienen costo o no tienen costo.
+**Quedo pendiente la parte de eliminar en el catalogo de contratistas.
+**Quedo pendiente la parte de agregar servicios a los contratistas.
+**Quedo pendiente lo de las tabulaciones en las ventanas.
+
+Version 0.38 25/03/2021 
+-Se diseño la ventana para agregar servicios a los contratistas y se controlo que se abriera en su lugar correspondiente
+-Se programo la parte de modificacion y eliminacion de servicios de los contratistas
+-Se modifico el diseño de las pestañas de productos y equipos de la ventana para agregar secciones de cotizaciones,
+ agregandole tooltips e iconos a los botones
+-Se diseño la pestaña de mano de obra en agregar secciones, con la subpestaña de contratistas.
+**Quedo el dilema : las herramientas tienen costo o no tienen costo.
+**Quedo pendiente lo de las tabulaciones en las ventanas.
+**Queda pendiente el deiseño de las demas subpestañas de mano de obra
+**Falta controlar que los botones de seleccionar (...) en la ventana de agregar seccioenes abran
+  sus catalogos correspondientes.
+
+Version 0.39 29/03/2021 | Version 0.9 de proyecto modular
+-Se modifico el modelo entidad relacion y el modelo relacional para agregar una relacion "provee" entre
+ productos y proveedores.
+-Se agrego a la base de datos la tabla de provee, con sus respectivas claves foraneas
+-Se agrego el campo de proveedores al catalogo de prpductos, y en la ventana de agregar productos, se agrego
+ un listado de proveedores en el cual se pueden agregar desde el catalogo.
+-Se elimino el campo de proveedor en la clase de salidas.
+-Se modificaron las vistas que tienen que ver con salidas para eliminar todo lo que tiene que ver con proveedores
+-Se agrego el motivo de devolucion de proyecto en la ventana de salidas, validando que si este motivo esta
+ seleccionado, se deshabilite el campo de proveedor.
+**Quedo pendiente agregar el campo de costo a las herramientas.
+**Quedo pendiente agregar el campo de proyecto en entradas y hacer la validacion de que solo este activo al
+  elegir el motivo de surtir proyecto.
+**Quedo pendiente lo de las tabulaciones en las ventanas.
+**Queda pendiente el deiseño de las demas subpestañas de mano de obra
+**Falta controlar que los botones de seleccionar (...) en la ventana de agregar secciones abran
+  sus catalogos correspondientes.
+
+Version 0.40 31/03/2021 | Version 0.10 de proyecto modular
+-Se agrego el campo de costo a las herramientas, realizando todas las modificaciones pertinentes en todas las ventanas
+ que hacen uso de este catalogo.
+-Se diseño la parte servicios de ococlimas en la ventana secciones agregar.
+-Se diseño la parte de vehiculos en la ventana secciones agregar.
+-Se diseño la parte de servicios genericos en la ventana secciones agregar.
+-Se arreglo el problema en la ventana de inventarios, donde al cambiar de productos a herramientas y viceversa,
+ el contenido de la tabla no era mostrado.
+**Quedo pendiente agregar el campo de proyecto en entradas y hacer la validacion de que solo este activo al
+  elegir el motivo de surtir proyecto.
+**Falta controlar que los botones de seleccionar (...) en la ventana de agregar secciones abran
+  sus catalogos correspondientes.
+**Queda pendiente la creacion de los catalogos de vehiculos y de servicios genericos.
+
+Versuion 0.41 07/04/2021
+-Se crearon las clases de vehiculos y servicios generales
+-Se hicieron los cases de vehiculos y servicios genericos en el metodo de crearColumnas en la vista de catalogos.
+-Se diseñaron las vistas para agregar vehiculos y servicios genericos.
+-Se programo la parte de agregar , modificar e eliminar de los catalogos de vehiculos y servicios genericos.
+-Se modifico el diseño de la ventana vistaCotizacionesAgregar para que no tuviera tantos espacios en blanco.
+-Se controlo que en la vistaCotizacionesAgregarSecciones los botones para seleccionar(...) abran sus respectivos catalogos y rellenen solamente 
+ el campo idetificador de lo que se selecciona
+-Se modifico el diseño de la parte de productos en la vistaCotizacionesAgregarSecciones para cambiar el orden de los campos para un mayor legibilidad
+-Se modifico el modelo relacional, para que los campos de las tablas tengan el mismo nombre que los campos de las tablas de la base de datos.
+**Quedo pendiente agregar el campo de proyecto en entradas y hacer la validacion de que solo este activo al
+  elegir el motivo de surtir proyecto.
+**Queda pendiente la especificacion de los campos del catalogo de servicios para poder crearlo y asi seleccionar elementos desde vistaCotizacionesAgregarSecciones 
+**Queda pendiente el seleccionar solamente un servicio de contratista, al tratar de seleccionarlo en la vistaCotizacionesAgregarSecciones.
+**Queda pendiente que al seleccionar un elemento del catalogo en vistaCotizacionesAgregarSecciones se rellenen todos los datos referentes al elemento seleccionado
+
+Version 0.42 | Version 0.11 de proyecto modular.
+-Se creo la clase coneccion para la hacer la coneccion con la base de datos.
+-Se importo la libreria de mysql jdbc 
+-Se hizo la vinculacion de productos, proveedores y herramientas a la base de datos, para que muestren sus respectivos datos.
+-Se reordenaron los atributos de productos para que el orden coincidiera con el de los campos de la base de datos.
+-Se valido que los datos de las tablas en los catalogos de herramientas, productos y proveedores solo sean cargados la primera vez que son seleccionados, para evitar la duplicidad de los datos.
+**Quedo pendiente agregar el campo de proyecto en entradas y hacer la validacion de que solo este activo al
+  elegir el motivo de surtir proyecto.
+**Queda pendiente la especificacion de los campos del catalogo de servicios para poder crearlo y asi seleccionar elementos desde vistaCotizacionesAgregarSecciones 
+**Queda pendiente el seleccionar solamente un servicio de contratista, al tratar de seleccionarlo en la vistaCotizacionesAgregarSecciones.
+**Queda pendiente que al seleccionar un elemento del catalogo en vistaCotizacionesAgregarSecciones se rellenen todos los datos referentes al elemento seleccionado
+**Queda pendiente hacer la validacion de la carga de datos en los demas catalogos.
+
+Version 0.43 | Version 0.12 de proyecto modular
+-Se modifico el modelado entidad relacion y relacional para que los productos y herramientas se encuentren en tablas separadas.
+-Se hicieron los cambios necesario a la base de datos para que esta coincidiera con la estructura del modelado.
+-Se programo la parte de agregar en los catalogos de productos, proveedores y herramientas, para que los datos se guardaran en la base de datos.
+**Quedo pendiente agregar el campo de proyecto en entradas y hacer la validacion de que solo este activo al
+  elegir el motivo de surtir proyecto.
+**Queda pendiente la especificacion de los campos del catalogo de servicios para poder crearlo y asi seleccionar elementos desde vistaCotizacionesAgregarSecciones 
+**Queda pendiente el seleccionar solamente un servicio de contratista, al tratar de seleccionarlo en la vistaCotizacionesAgregarSecciones.
+**Queda pendiente que al seleccionar un elemento del catalogo en vistaCotizacionesAgregarSecciones se rellenen todos los datos referentes al elemento seleccionado
+**Queda pendiente hacer la validacion de la carga de datos en los demas catalogos.
+**Queda pendiente la parte de modificar en los catalogos para que los cambios se guarden en la base de datos.
+
+Version 0.44 | Version 0.13 de proyecto modular
+-Se programaron las partes de modificaciones y eliminaciones de los catalogos de productos, herramientas y proveedores, para que hicieran sus respectivos cambios 
+ en la base de datos.
+-Se agrego una validacion en la vista para agregar productos que controla si el elemento que ha sido seleccionado ya se encuentra en a lista
+**Queda pendiente hacer la validacion anterior en todos los lugares del programa donde se seleccionen elementos de los catalogos.
+**Queda pendiente la vinculacion de los catalogos simples con la base de datos.
+**Queda pendiente hacer que los id de los catalogos, no puedan ser modificados.
+
+Version 0.45 | Version 0.14 de proyecto modular
+-Se hizo la vinculacion de los catalogos simples con la base de datos
+-Se hizo la vinculacion de entradas con la base de datos
+-El campo de folio de entradas, se hizo autoincrementable.
+-Se comenzo la programacion de la vinculacion de la parte para agregar entradas.
+**Quedo en observacion el porque al agregar registros a la tabla de requieren, da un error en la clave foranea con folio_entradas
+**Queda pendiente hacer que los id de los catalogos, no puedan ser modificados.
+**Queda pendiente hacer la validacion anterior en todos los lugares del programa donde se seleccionen elementos de los catalogos.
+
+Version 0.46 | Version 0.15 de proyecto modular
+-Al seleccionar los datos en la vista de agregar secciones en cotizaciones de productos, equipos, vehiculos, servicios genericos y personal de ococlimas,
+ los campos se llenan con sus datos correspondientes 
+-Se agrego un campo adicional en las tablas de productos y herramientas, que controla si ese registro ya ha sido "eliminado" o no, y por ende, si se muestra en
+ el catalogo o no.
+-Se agrego un registro vacio al incio de las tablas de productos y herramientas, para referenciarlo en la tabla de requieren para evitar errores con las claves foraneas
+-Se controlo que en la parte de productos, solo se muestren los que no tienen un * en su ultimo campo.
+**Queda pendiente controlar que en el catalogo de herramientas solo se  muestren las herramientas que no tegan un * en el ultimo campo.
+**Queda pendiente la creacion del catalogo de servicios.
+**Falta la parte para seleccionar servicios de contratistas en las cotizaciones
+**Falta agregar un textField para poner el puesto del personal de ococlimas
+**Falta checar que ya se puedan agregar correctamente las entradas.
+**Queda pendiente hacer la validacion de la carga de datos en los demas catalogos.
+**Queda pendiente hacer que los id de los catalogos, no puedan ser modificados.
+**Queda pendiente el validar que al selecionar un elemento de un catalogo y este sera agregado a una lista, este no se encuentre dentro de la lista, es decir,
+  que no se duplique
+
+Version 0.47 | Version 0.16 de proyecto modular
+-Se arreglo el problema de no poder agregar entradas modificando las claves foraneas y las consultas de la tabla de requieren.
+-Se agregaron los botones en vistaCatalogosProductosAgregar para seleccionar clases y subclases desde la base de datos.
+-Se modifico el modelado entidad relacion, relacional y la base de datos para agregar una clave primaria a las unidades_tipos
+-Se modifico la ventana de catalagos simples reemplazando la listView por una TableView para hacer posible la identificacion de los objetos que son seleccionados
+-se realizaron todas las modificaciones pertinentes en la ventana de catalogos simples para que todos los cambios sean guardados en la base de datos.
+-Se programo que a la hora de guardar un producto o una entrada, las tablas de proveedores o de productos, sean limpiadas.
+-Se controlo que en el catalogo de herramientas solo sean mostradas las herramientas que no tienen un * en su ultimo campo.
+**Queda pendiente hacer la validacion de la carga de datos en los demas catalogos.
+**Queda pendiente hacer que los id de los catalogos, no puedan ser modificados.
+**Queda pendiente el validar que al selecionar un elemento de un catalogo y este sera agregado a una lista, este no se encuentre dentro de la lista, es decir,
+  que no se duplique
+**Queda pendiente la creacion del catalogo de servicios.
+**Falta la parte para seleccionar servicios de contratistas en las cotizaciones.
+**Agregar un tooltip a los botones de la vista principal explicando para que es cada seccion
+
+Version 0.48 | Version 0.17 de proyecto modular
+-Se diseño la ventana de servicios para ser usada posteriormente para agregar modificar y eliminar datos del catalogo de servicios.
+-Se modifico la clase de servicios para que tenga sus atributos correspondientes.
+-Se agregaron tooltips a los botones de la ventana principal.
+-Se modificaron los campos de clase y subclase en productos para que estos sean claves foraneas.
+-Se hicieron las modificaciones pertinentes a la hora de agregar datos y modificar datos para que estas funciones funcionaran correctamente despues del cambio de los atributos de clase y subclase.
+-Se realizaron 3 consultas especiales para poder mostrar lso datos de las unidades, clases y subclases de los productos, en lugar de sus ids.
+**Queda pendiente hacer clave foranea la parte de clase en herramientas.
+**Queda pendiente hacer la validacion de la carga de datos en los demas catalogos.
+**Queda pendiente hacer que los id de los catalogos, no puedan ser modificados.
+**Queda pendiente el validar que al selecionar un elemento de un catalogo y este sera agregado a una lista, este no se encuentre dentro de la lista, es decir,
+  que no se duplique
+**Falta la parte para seleccionar servicios de contratistas en las cotizaciones.
+
+Version 0.49 | Version 0.18 de proyecto modular
+-Se modificaron las ventanas de agregar en los catalogos para que los campos que son seleccionados mediante [...] no sean editables, asi como los ids y codigos.
+-Se valido en la parte de entradas, que al agregar un producto que ya estuviera dentro de la lista de productos de una entrada, se mostrara un mensaje de warning indicando
+ duplicidad.
+-Se hizo clave foranea el campo de clase de las herramientas y se hicieron los respectivos cambios a las partes de agregar, eliminar y modificar para que funcionaran
+ adecuadamente despues de los cambios.
+-Se hizo clave foranea el campo de tipo en los proveedores y se hicieron los respectivos cambios a las partes de agregar y modificar para que funcionaran
+ adecuadamente despues de los cambios.
+**Queda pendiente hacer la validacion de la carga de datos en los demas catalogos.
+**Queda pendiente el validar que al selecionar un elemento de un catalogo y este sera agregado a una lista, este no se encuentre dentro de la lista, es decir,
+  que no se duplique
+**Falta la parte para seleccionar servicios de contratistas en las cotizaciones.
+**Falta arreglar la parte de eliminar de proveedores, para que se realice una eliminacion logica.
+
+Version 0.50 | Version 0.19 de proyecto modular 28/04/2021
+-Se modifico el modelo entidad relacion para agregar una tabla de proyectos con relacion a entradas y salidas.
+-Se modifico el modelo relacional para normalizar los cambios hechos al modelo entidad relacion.
+-Se agrego la tabla de proyectos a la base de datos y se hicieron sus respectivas conexiones.
+-Se creo la clase de proyectos para poder instanciar objetos de esta.
+-Se diseño la ventana para agregar proyectos.
+-Se añadio el catalogo de proyectos.
+-Se programaron de manera logica las partes de eliminacion, agregar y modificar proyectos.
+-Se modifico el diseño de las ventanas para agregar entradas, agregando el campo de proyecto a "surtit"
+-Se modifico el diseño de la tabla de agregar salidas añadiendo los campos de proveedor para devoluciones a proveedores y el campo de 
+ proyecto para surtir proyectos.
+-Se añadio el campo de is_eliminado a las tablas de proyectos y proveedores para programar una eliminacion logica
+**Falta programar la eliminacion logica para proyectos y proveedores.
+**Falta realizar la vinculacion del catalogo de proyectos con la base de datos.
+**Queda pendiente hacer la validacion de la carga de datos en los demas catalogos.
+**Queda pendiente el validar que al selecionar un elemento de un catalogo y este sera agregado a una lista, este no se encuentre dentro de la lista, es decir,
+  que no se duplique
+
+Version 0.51 | Version 0.20 de proyecto modular 29/04/2021
+-Se hizo la vinculacion con la base de datos con el catalogo de proyectos, vinculando todas sus funciones, agregar, modificar, eliminar.
+-Se programo en la ventanas de agregar salidas y entradas, se abriera el catalogo de proyectos al dar clik en [...] o al dar enter y se devolvieran los datos para ser 
+ mostrados en su respectivo textField.
+-Se hicieron las validaciones correspondientes en la ventana de agregar entradas y agregar salidas para que los campos de proyecto y proveedor se habilitaran o deshabilitaran
+ dependiendo de la seleccion en el comboMotivo.
+-Se programo la eliminacion logica para proyectos y proveedores.
+**Queda pendiente hacer la validacion de la carga de datos en los demas catalogos.
+**Queda pendiente el validar que al selecionar un elemento de un catalogo y este sera agregado a una lista, este no se encuentre dentro de la lista, es decir,
+  que no se duplique
+**Queda pendiente hacer la presentacion
+
+Version 0.52 
+-Se hicieron cambios esteticos
+**Queda pendiente hacer la validacion de la carga de datos en los demas catalogos.
+**Queda pendiente el validar que al selecionar un elemento de un catalogo y este sera agregado a una lista, este no se encuentre dentro de la lista, es decir,
+  que no se duplique
+**Queda pendiente hacer la presentacion
+
+Version 0.53 | Version 0.21 de proyecto modular
+-Se cambiaron algunos campos de texto en las partes de descripciones y obervaciones por areas de texto.
+-Se controlo que al eliminar un proveedor, tambien sean eliminadas sus vinculaciones con los productos.
+-Se modifico el tamaño del campo motivo en la tabla de entradas en la base de datos ya que estaba causando problemas al guardar.
+-Se descarto la parte de la validadcion de carga de datos en los catalogos y se cambio por hacer un vaicado de la lista 
+ antes de cargar los datos, para evitar duplicidad.
+-Se realizo la conclusion de la presentacion del proyecto
+-Se modifico el modelo entidad relacion agregrando algunos campos a la realcion de introduce_a 
+**Quedo pendienet hacer los cambios pertinentes al modelo relacional y a la base de datos para que coincidan con el modelo entidad relacion
+**Queda pendiente la parte de que al momento de agregar una entrada, esta cree resgistros en las tablas de introduce_a y de inventarios
+**Queda pendiente la revision de la presentacion.
+
+Version 0.54 | Version 0.22 de proyecto modular
+-Se realizaro cambios en el modelo entidad-relacion y en el modelo relacional en los que se separo la tabla de introduce_a en dos tablas para dos relaciones distintas
+ una para productos y otra para herramientas.
+-Se separo la tabla de inventarios en dos y se convirtieron en entidades debiles con relacion a las tablas de productos y herrameintas repectivamente.
+-Se agrego el campo de proveedor a salidas.
+-Se hicieron los cambios pertinentes en la base de datos
+**Quedo pendienet hacer los cambios pertinentes al modelo relacional y a la base de datos para que coincidan con el modelo entidad relacion
+**Queda pendiente la parte de que al momento de agregar una entrada, esta cree resgistros en las tablas de introduce_a y de inventarios
+**Queda pendiente la revision de la presentacion.
+
+Version 0.55 | Version 0.23 de proyecto modular 15/05/2021
+-Se modifico la base de datos para que coincidiera con los modelados de la version 0.54
+-Se vinvulo la base de datos en la parte entradas, para que a la hora de agregar una entrada, se agregaran registros a la tabla
+ introduce_productos e inventario_productos.
+-Se controlo que al tratar de agregar un producto al inventario, se validara si este ya existe en el inventario, si es asi, solo son 
+ actualiados los registros en productos_iventario.
+**Quedo pendiente el vinculo de la base de datos con entradas para agregar herramientas al inventario
+**Queda pendiente la parte de modificar entradas.
+
+Version 0.56 | Version 0.24 de proyecto modular 17/05/2021
+-Se programo la parte de mostrar los datos de la base de datos en las tablas de inventario.
+-Se programaron las consultas para que sean mostrados los productos de cada entrada al tratar de modificarse.
+-Se eliminaron algunas columnas innecesarias en la tabla de inventarios en la interfaz.
+-Se programo el vinculo con la base de datos a la hora de agregar herramientas en una entrada
+**Queda pendiente la parte de modificar entradas.
+
+Version 0.57 | Version 0.25 de proyecto modular 19/05/2021
+-Se programo la parte de modificaciones de entradas
+-Se programo la parte de eliminaciones agregando eliminacion logica a las entradas
+-Se arreglo un error en el que al tratar un producto y una herramienta con el mismo ID, alguno de estos no podria ser agregado a la lista
+ por error de duplicidad.
+-Se controlo que los registros de las entradas se muestren ordenados por folio
+**Queda pendiente la programacion de las barras de busqyeda de entradas y salidas.
+**Queda pendiente la ventana de detalles de productos en inventario.
+**Queda en observacion una manera de implementar seguridad en el proyecto
+
+Version 0.58 | Version 0.26 de proyecto modular 20/05/2021
+-Se diseño la ventana para mostrar los detalles de los productos en inventario
+-Se añadieron los listeners a los textFields de entradas, salidas e inventarios para que sea posible la busqueda de datos
+-Se hizo la vinculacion con la base de datos para que la tabla de salidas muestre los datos de la db.
+-Se programo que la ventana de DetallesInventario se abra cuando se de doble click sobre un producto o herramienta.
+-Se hizo la vinculacion de la VistaDetallesInventario con la base de datos, para que despliegue los detalles del producto que fue
+ seleccionado
+-Se programo la eliminacion logica de las salidas
+**Queda pendiente la viculacion con la base de datos para agregar salidas 
+**Queda en observacion una manera de implementar seguridad en el proyecto
+**Queda en observacion el error donde no se puede agregar una entrada si no ha sido seleccionado un proyecto
+
+Version 0.59 | Version 0.27 de proyecto modular 25/05/2021
+-Se programo la parte en salidas, en la que los productos son seleccionados desde la ventana de detalles de productos de inventario.
+-Se agrego un label a lado del campo de cantidad en las salidas para mostrar la cantidad de productos de ese tipo que hay en inventario
+-Se valido que la cantidad digitada sea menor que la cantidad de productos en inventario para poder agregar el registro a la tabla.
+-Se soluciono el error en el que al agregar una entrada sin nada en el campo de proyecto, no dejaba agregarla a la base de datos
+-Se valido que en la ventana de detalles de productos en inventario solo se cierre al dar doble clic sobre un elemento, si la ventana
+ de inventarios fue abierta desde otra ventana que no sea la principal
+**Queda pendiente la viculacion con la base de datos para agregar salidas 
+**Queda en observacion una manera de implementar seguridad en el proyecto
+**Queda pendiente agregar los listners a las barras de busqueda de salidas y entradas, para permitir la busqueda de datos
+
+Version 0.60 | Version 0.28 de proyecto modular 26/25/2021
+-Se programaron las barras de busqueda de entradas agregar y salidas agregar.
+-Se valido que no se pudieran agregar elementos duplicados en la lista de productos de salidas
+-Se hizo la vinculacion con la base de datos a la hora de agregar salidas, haciendo la actualizacion de los inventarios y validando
+ si aun existen en inventario elementos de los productos que salieron o no.
+-Se vinculo con la base de datos la parte de eliminar salidas.
+-Se agrego el campo de costo a la tabla de salen_por y se actualizaron los diagramas y la base de datos
+**Queda en observacion una manera de implementar seguridad en el proyecto
+**Queda pendiente la parte de la vinculacion de base de datos en modificar salidas
+
+Version 0.61 | Version 0.29 de proyecto modular 27/05/2021
+-Se programo la parte para mostrar los datos de una salida a la hora de tratar de modificarla
+-Se agrego un campo a la tabla de salen_por para contrlolar la cantidad total de cada producto con un precio en especifico en el moemento
+ en el que fue agregado en la salida.
+-Fueron modificados los modelados.
+**Queda en observacion una manera de implementar seguridad en el proyecto
+**Queda pendiente la parte de la vinculacion de base de datos en modificar salidas
+**Queda pendiente ver una manera de controlar que la cantidad de los productos que esta en inventario no se rebaje doble vez al modificar
+  siguiendo los pasos que escribio jorge.
+
+Version 0.62 | Version 0.30 de proyecto modular 02/06/2021
+-Se controlo que al agregar salidas, se agregue tambien la cantidad total de productos de cada producto de la salida
+**Queda en observacion una manera de implementar seguridad en el proyecto
+**Queda pendiente la parte de la vinculacion de base de datos en modificar salidas
+**Queda pendiente ver una manera de controlar que la cantidad de los productos que esta en inventario no se rebaje doble vez al modificar
+  siguiendo los pasos que escribio jorge.
+**--Queda pendiente ver una manera de al momento de modificar un producto  de un salida, la label cantidad muestre la cantidad total 
+  de elementos en inventario en ese momento(Agregar) o al momento que se realizo la salida(Modificar).
+  Agregando el atributo de cantidad total a los onejtos de productos salidas
+
+Version 0.63 | Version 0.31 de proyecto modular 03/06/2021
+-Se agrego el atributo de cantidad total a los objetos de productos salidas, para poder mostrar correctamente la cantidad total
+ de productos traida desde la base de datos.
+-Se programo la parte de modificaciones en salidas, agregando primero todo lo que salio en esa salida al inventario, y despues volver
+ a sacar los elementos del inventario pero con los productos actualizados(Solo funciona si el producto se ecuentra aun en inventario)
+**Queda en observacion una manera de implementar seguridad en el proyecto
+**Queda pendiente la parte de la vinculacion de base de datos en modificar salidas
+**Queda en observacion el problema al modificar salidas en el que los productos que son modificados,se registran en la base de datos, con
+  la cantidad de productos que se encuentran en la actualidad en el inventario, y no con la cantidad de productos que se encontraban
+  en invenatrio a la hora de que estos salieron.
+**Queda pendiente el resolver el error de llave foaranea a la hora de que al recuperar los productos de la salida al modificar, sea necesario
+  introducir un registro en la tabla de introduce_productos  / herramientas por el hecho de que este ya no existe en inventario.
+  Se piensa arreglar agregando un regsitro referente al producto enla tabla de inventario, antes de que se haga el registro en la tabal de introduce
+
+

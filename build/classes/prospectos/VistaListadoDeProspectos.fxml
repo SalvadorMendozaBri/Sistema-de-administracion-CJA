@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox fx:id="hBox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="485.0" prefWidth="1194.0" spacing="15.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="prospectos.VistaListadoDeProspectosController">
+   <children>
+      <VBox prefHeight="493.0" prefWidth="1052.0" spacing="15.0" HBox.hgrow="ALWAYS">
+         <children>
+            <HBox alignment="BOTTOM_LEFT" prefHeight="43.0" prefWidth="970.0" spacing="10.0" VBox.vgrow="NEVER">
+               <children>
+                  <TextField fx:id="txtBuscar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="237.0" promptText="Buscar" />
+                  <Pane prefHeight="43.0" prefWidth="662.0" HBox.hgrow="ALWAYS">
+                     <children>
+                        <ComboBox fx:id="comboOculto" disable="true" layoutX="256.0" layoutY="10.0" prefHeight="25.0" prefWidth="0.0" visible="false" />
+                     </children></Pane>
+                  <ImageView fx:id="icono" fitHeight="45.0" fitWidth="59.0" pickOnBounds="true" preserveRatio="true" HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+            <HBox prefHeight="362.0" prefWidth="963.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <TableView fx:id="tablaProspectos" onKeyReleased="#seleccionarEnter" onMouseClicked="#seleccionarMouseClicked" prefHeight="357.0" prefWidth="972.0" HBox.hgrow="ALWAYS">
+                    <columns>
+                      <TableColumn fx:id="columnaFolio" prefWidth="75.0" text="Folio" />
+                      <TableColumn prefWidth="143.0" text="Fecha Registro" />
+                        <TableColumn minWidth="7.0" prefWidth="157.0" text="Usuario Registra" />
+                        <TableColumn prefWidth="88.0" text="Nombre" />
+                        <TableColumn prefWidth="61.0" text="calle" />
+                        <TableColumn prefWidth="95.0" text="Correo" />
+                        <TableColumn prefWidth="96.0" text="Telefono" />
+                        <TableColumn prefWidth="187.0" text="Vendedor Encargado" />
+                        <TableColumn minWidth="4.0" prefWidth="69.0" text="Status" />
+                    </columns>
+                  </TableView>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="10.0" />
+         </padding>
+      </VBox>
+      <VBox alignment="TOP_CENTER" prefHeight="408.0" prefWidth="160.0" spacing="20.0" HBox.hgrow="NEVER">
+         <children>
+            <Button fx:id="botonAgregar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#agregar" prefHeight="26.0" prefWidth="120.0" text="Agregar" />
+            <Button fx:id="botonModificar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#modificar" prefHeight="25.0" prefWidth="120.0" text="Modificar" />
+            <Button fx:id="botonEliminar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#eliminar" prefHeight="25.0" prefWidth="120.0" text="Eliminar" />
+            <Button fx:id="botonSeguimiento" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#seguimiento" prefHeight="25.0" prefWidth="120.0" text="Seguimiento" />
+            <Pane prefHeight="126.0" prefWidth="120.0" VBox.vgrow="ALWAYS" />
+            <Button fx:id="botonSalir" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#salir" prefHeight="25.0" prefWidth="120.0" text="Salir" />
+         </children>
+         <padding>
+            <Insets bottom="20.0" top="80.0" />
+         </padding>
+         <HBox.margin>
+            <Insets right="20.0" />
+         </HBox.margin>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</HBox>

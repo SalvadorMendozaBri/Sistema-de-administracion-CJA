@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="416.0" prefWidth="606.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="moduloInventarios.VistaDetalleProductosInventarioController">
+   <children>
+      <VBox prefHeight="332.0" prefWidth="560.0" spacing="10.0">
+         <children>
+            <TextField fx:id="txtBuscar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="225.0" promptText="Buscar..." />
+            <TableView fx:id="tablaDetalle" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#selecconarProductoMouseClicked" prefHeight="291.0" prefWidth="566.0">
+              <columns>
+                  <TableColumn fx:id="ColumnaID" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="columnaNombreCorto" prefWidth="222.0" text="Nombre Corto" />
+                <TableColumn fx:id="columnaCosto" prefWidth="133.0" text="Costo" />
+                  <TableColumn fx:id="columnaCantidad" minWidth="0.0" prefWidth="134.0" text="Cantidad" />
+              </columns>
+            </TableView>
+         </children>
+      </VBox>
+      <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+         <children>
+            <ComboBox fx:id="comboOculto" prefHeight="25.0" prefWidth="0.0" visible="false" />
+            <Button fx:id="botonSeleccionar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#seleccionar" prefHeight="25.0" prefWidth="95.0" text="Seleccionar" />
+            <Button fx:id="botonSalir" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#salir" prefHeight="25.0" prefWidth="95.0" text="Salir" />
+         </children>
+         <VBox.margin>
+            <Insets top="10.0" />
+         </VBox.margin>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

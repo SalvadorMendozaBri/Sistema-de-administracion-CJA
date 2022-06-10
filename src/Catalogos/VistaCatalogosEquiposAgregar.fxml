@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane hgap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="517.0" prefWidth="751.0" vgap="10.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Catalogos.VistaCatalogosEquiposAgregarController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="294.0" minWidth="10.0" prefWidth="82.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="810.0" minWidth="0.0" prefWidth="230.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="810.0" minWidth="0.0" prefWidth="112.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="810.0" minWidth="10.0" prefWidth="253.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints maxHeight="40.0" minHeight="20.0" prefHeight="40.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="40.0" minHeight="20.0" prefHeight="40.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="40.0" minHeight="20.0" prefHeight="40.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="40.0" minHeight="20.0" prefHeight="40.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="40.0" minHeight="20.0" prefHeight="40.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="40.0" minHeight="20.0" prefHeight="40.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="40.0" minHeight="20.0" prefHeight="40.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="40.0" minHeight="20.0" prefHeight="40.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="40.0" minHeight="20.0" prefHeight="40.0" vgrow="SOMETIMES" />
+      <RowConstraints maxHeight="40.0" minHeight="20.0" prefHeight="40.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label text="Código:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtCodigo" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="90.0" GridPane.columnIndex="1" />
+      <Label text="Fecha de registro:" GridPane.columnIndex="2">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="dateFechaRegistro" disable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="225.0" GridPane.columnIndex="3" />
+      <Label text="Nombre:" GridPane.rowIndex="1">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtNombre" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="225.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label text="Descripción:" GridPane.rowIndex="2">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextArea fx:id="txtDescripcion" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="54.0" prefWidth="595.0" GridPane.columnIndex="1" GridPane.rowIndex="2">
+         <GridPane.margin>
+            <Insets bottom="10.0" top="10.0" />
+         </GridPane.margin>
+      </TextArea>
+      <Label text="Modelo:" GridPane.rowIndex="3">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label text="Marca:" GridPane.columnIndex="2" GridPane.rowIndex="3">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label text="Caudal:" GridPane.rowIndex="4">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label text="Presión:" GridPane.columnIndex="2" GridPane.rowIndex="4">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label text="Potencia:" GridPane.rowIndex="5">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label text="Voltaje:" GridPane.columnIndex="2" GridPane.rowIndex="5">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label text="Amperaje:" GridPane.rowIndex="6">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label text="Gas refrigerante:" GridPane.columnIndex="2" GridPane.rowIndex="6">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label text="Capacidad:" GridPane.rowIndex="7">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label text="Costo:" GridPane.columnIndex="2" GridPane.rowIndex="7">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label text="Tipo:" GridPane.rowIndex="8">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtModelo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="225.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <TextField fx:id="txtMarca" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="225.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+      <TextField fx:id="txtCaudal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="225.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <TextField fx:id="txtPresion" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="225.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+      <TextField fx:id="txtPotencia" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="225.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <TextField fx:id="txtVoltaje" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="225.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+      <TextField fx:id="txtAmperaje" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="225.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+      <TextField fx:id="txtGasRefrigerante" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="225.0" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+      <TextField fx:id="txtCapacidad" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="225.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+      <TextField fx:id="txtCosto" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="225.0" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+      <ComboBox fx:id="comboTipo" prefHeight="25.0" prefWidth="225.0" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+      <HBox alignment="TOP_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="3" GridPane.rowIndex="9">
+         <children>
+            <Button fx:id="botonGuardar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#guardar" prefHeight="25.0" prefWidth="90.0" text="Guardar" />
+            <Button fx:id="botonCancelar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#cancelar" prefWidth="90.0" text="Cancelar" />
+         </children>
+         <GridPane.margin>
+            <Insets right="45.0" />
+         </GridPane.margin>
+      </HBox>
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="15.0" right="15.0" top="15.0" />
+   </padding>
+</GridPane>

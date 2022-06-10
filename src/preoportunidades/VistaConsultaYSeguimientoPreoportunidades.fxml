@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox prefHeight="539.0" prefWidth="1350.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="preoportunidades.VistaConsultaYSeguimientoPreoportunidadesController">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="539.0" prefWidth="737.0">
+         <children>
+            <Label text="Datos de preoportunidad.">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="15.0" />
+               </VBox.margin>
+            </Label>
+            <GridPane hgap="10.0" prefHeight="70.0" prefWidth="649.0" vgap="10.0" VBox.vgrow="ALWAYS">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="134.0" minWidth="-Infinity" prefWidth="130.0" />
+                <ColumnConstraints hgrow="SOMETIMES" maxWidth="179.0" minWidth="-Infinity" prefWidth="175.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="191.0" minWidth="-Infinity" prefWidth="114.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.0" minWidth="-Infinity" prefWidth="162.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="250.0" minWidth="10.0" prefWidth="86.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="58.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="31.0" minHeight="2.0" prefHeight="31.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <VBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </VBox.margin>
+               <children>
+                  <Label text="Folio:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtFolio" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="93.0" GridPane.columnIndex="1" />
+                  <Label text="Fecha de registro:" GridPane.columnIndex="2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="dateFechaRegistro" disable="true" prefHeight="25.0" prefWidth="205.0" GridPane.columnIndex="3" />
+                  <Label text="Usuario que registra:" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtUsuario" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label text="Prospecto:" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtProspecto" onKeyReleased="#seleccionarProspectoKeyTyped" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                  <Button fx:id="botonSeleccionarProspecto" mnemonicParsing="false" onAction="#seleccionarProspecto" text="..." GridPane.columnIndex="4" GridPane.rowIndex="1" />
+               </children>
+            </GridPane>
+            <Separator prefHeight="0.0" prefWidth="670.0" />
+            <VBox VBox.vgrow="NEVER">
+               <children>
+                  <GridPane hgap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="26.0" prefWidth="101.0" vgap="10.0">
+                     <children>
+                        <Label text="Titulo:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="txtTitulo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="205.0" GridPane.columnIndex="1" />
+                     </children>
+                     <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="134.0" minWidth="-Infinity" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" maxWidth="265.0" minWidth="-Infinity" prefWidth="265.0" />
+                     </columnConstraints>
+                     <rowConstraints>
+                        <RowConstraints maxHeight="58.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="15.0" right="15.0" top="15.0" />
+                     </VBox.margin>
+                  </GridPane>
+                  <Label text="Descripción:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <TextArea fx:id="txtAreaDescripcion" prefHeight="66.0" prefWidth="707.0" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="15.0" right="15.0" />
+                     </VBox.margin>
+                  </TextArea>
+                  <Label text="Archivos referentes:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <ListView fx:id="listArchivosAdjuntos" prefHeight="82.0" prefWidth="737.0" VBox.vgrow="ALWAYS">
+                     <VBox.margin>
+                        <Insets bottom="5.0" left="15.0" right="15.0" />
+                     </VBox.margin>
+                  </ListView>
+                  <HBox spacing="10.0">
+                     <children>
+                        <Button fx:id="botonAdjuntarArchivo" disable="true" mnemonicParsing="false" onAction="#adjuntarArchivo" text="Adjuntar archivo">
+                           <VBox.margin>
+                              <Insets bottom="10.0" left="15.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="botonEliminar" disable="true" mnemonicParsing="false" onAction="#eliminarArchivo" prefHeight="25.0" prefWidth="80.0" text="Eliminar" />
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" left="15.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+            <HBox spacing="10.0" VBox.vgrow="NEVER">
+               <children>
+                  <Label text="Verificación de ingenieria:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="15.0" />
+                     </VBox.margin>
+                  </Label>
+                  <CheckBox disable="true" mnemonicParsing="false" />
+               </children>
+               <VBox.margin>
+                  <Insets left="15.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="10.0" />
+               </padding>
+            </HBox>
+            <Separator prefHeight="0.0" prefWidth="670.0" />
+            <GridPane hgap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="723.0" vgap="10.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label text="Vendedor encargado:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="20.0" prefWidth="115.0" text="Division asignada:" GridPane.columnIndex="3">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label GridPane.rowIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtVendedor" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" onKeyReleased="#seleccionarVendedorKeyTyped" prefHeight="25.0" prefWidth="172.0" GridPane.columnIndex="1" />
+                  <Label text="Status:" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ComboBox fx:id="comboDivision" disable="true" prefHeight="25.0" prefWidth="207.0" GridPane.columnIndex="4" />
+                  <ComboBox fx:id="comboStatus" disable="true" prefHeight="25.0" prefWidth="193.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label text="Fecha compromiso:" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="dateFechaCompromiso" disable="true" prefHeight="25.0" prefWidth="207.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                  <Button fx:id="botonSeleccionarVendedor" mnemonicParsing="false" onAction="#seleccionarVendedor" text="..." GridPane.columnIndex="2" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="137.0" minWidth="-Infinity" prefWidth="137.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="289.0" minWidth="-Infinity" prefWidth="173.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="289.0" minWidth="0.0" prefWidth="27.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="262.0" minWidth="-Infinity" prefWidth="128.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="414.0" minWidth="-Infinity" prefWidth="219.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="58.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="31.0" minHeight="2.0" prefHeight="31.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <VBox.margin>
+                  <Insets left="15.0" right="15.0" top="10.0" />
+               </VBox.margin>
+            </GridPane>
+            <HBox alignment="CENTER_RIGHT" prefHeight="51.0" prefWidth="737.0" spacing="15.0">
+               <VBox.margin>
+                  <Insets left="15.0" right="15.0" />
+               </VBox.margin>
+               <children>
+                  <Button fx:id="botonGuardar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#guardar" prefWidth="90.0" text="Modificar" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Separator orientation="VERTICAL" prefHeight="200.0" style="-fx-background-color: #f6f6f6;" />
+      <VBox prefHeight="539.0" prefWidth="532.0" spacing="10.0">
+         <children>
+            <Label text="Seguimiento de preoportunidad">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtBuscar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="237.0" promptText="Buscar" />
+            <TableView fx:id="tablaSeguimientosPreoportunidades" onKeyReleased="#seleccionarEnter" onMouseClicked="#seleccionarMouse" prefHeight="377.0" prefWidth="532.0" VBox.vgrow="ALWAYS">
+               <columns>
+                  <TableColumn prefWidth="75.0" text="Folio" />
+                  <TableColumn prefWidth="143.0" text="Fecha Registro" />
+                  <TableColumn prefWidth="222.0" text="Vendedor Encargado" />
+                  <TableColumn minWidth="4.0" prefWidth="154.0" text="Status" />
+               </columns>
+            </TableView>
+            <Button fx:id="botonArchivosAdjuntos" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#abrirArchivosAdjuntos" prefHeight="25.0" prefWidth="120.0" text="Archivos adjuntos" />
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0" VBox.vgrow="NEVER">
+               <children>
+                  <Button fx:id="botonAgregarSeguimiento" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#agregarSeguimiento" prefHeight="25.0" prefWidth="139.0" text="Agregar seguimiento" />
+                  <Button fx:id="botonModificar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#modificar" prefHeight="25.0" prefWidth="139.0" text="Modificar" />
+                  <Button fx:id="botonElimina" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#eliminar" prefHeight="25.0" prefWidth="139.0" text="Eliminar" />
+                  <Button fx:id="botonCotizar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#cotizar" prefHeight="25.0" prefWidth="149.0" text="Cotizar" />
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</HBox>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox fx:id="hbox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="1068.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="moduloSalidas.VistaSalidasController">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="957.0" spacing="15.0" style="-fx-background-color: ;" HBox.hgrow="ALWAYS">
+         <children>
+            <HBox alignment="CENTER">
+               <children>
+                  <TextField fx:id="txtBuscar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="178.0" promptText="Buscar..." />
+                  <Pane prefHeight="50.0" prefWidth="662.0" HBox.hgrow="ALWAYS" />
+                  <ImageView fx:id="icono" fitHeight="50.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </HBox>
+            <HBox VBox.vgrow="ALWAYS">
+               <children>
+                  <TableView fx:id="tablaSalidas" prefHeight="310.0" prefWidth="814.0" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
+                    <columns>
+                      <TableColumn fx:id="columnaFolio" prefWidth="75.0" text="Folio" />
+                      <TableColumn fx:id="columnaProductos" prefWidth="180.0" text="Productos" />
+                      <TableColumn fx:id="columnaFecha" prefWidth="207.0" text="Fecha" />
+                        <TableColumn fx:id="columnaEntrego" minWidth="0.0" prefWidth="209.0" text="Entrego" />
+                        <TableColumn fx:id="columnaReferencia" minWidth="0.0" prefWidth="225.0" text="Referencia" />
+                    </columns>
+                  </TableView>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="10.0" />
+         </padding>
+      </VBox>
+      <VBox alignment="TOP_CENTER" prefHeight="400.0" prefWidth="151.0" spacing="20.0" HBox.hgrow="NEVER">
+         <children>
+            <Button fx:id="botonAgregar" mnemonicParsing="false" onAction="#agregar" prefHeight="25.0" prefWidth="85.0" text="Agregar" />
+            <Button fx:id="botonModificar" mnemonicParsing="false" onAction="#modificar" prefHeight="25.0" prefWidth="85.0" text="Modificar" />
+            <Button fx:id="botonEliminar" mnemonicParsing="false" onAction="#eliminar" prefHeight="25.0" prefWidth="85.0" text="Eliminar" />
+            <Pane prefHeight="128.0" prefWidth="91.0" VBox.vgrow="ALWAYS" />
+            <Button fx:id="botonSalir" mnemonicParsing="false" onAction="#salir" prefHeight="25.0" prefWidth="85.0" text="Salir" />
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+   </children>
+</HBox>

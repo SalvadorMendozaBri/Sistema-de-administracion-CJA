@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="369.0" prefWidth="721.0" spacing="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="moduloPrestamos.VistaPrestamosDevolucionesController">
+   <children>
+      <Label text="Seleccione el prestamo a devolver:" />
+      <TextField maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="215.0" promptText="Buscar..." />
+      <TableView minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="620.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="Folio" />
+          <TableColumn prefWidth="215.0" text="Herramienta prestada" />
+            <TableColumn prefWidth="191.0" text="Fecha de prestamo " />
+            <TableColumn prefWidth="169.0" text="Estado" />
+        </columns>
+      </TableView>
+      <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+         <children>
+            <Button fx:id="botonAceptar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#aceptar" prefWidth="90.0" text="Aceptar" />
+            <Button fx:id="botonCancelar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#cancelar" prefWidth="90.0" text="Cancelar" />
+         </children>
+      </HBox>
+   </children>
+   <padding>
+      <Insets left="15.0" right="15.0" top="15.0" />
+   </padding>
+</VBox>

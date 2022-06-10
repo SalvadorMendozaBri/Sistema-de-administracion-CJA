@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0" prefWidth="695.0" style="-fx-background-color: #F6F6F6;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="moduloEntradas.VistaEntradasAgregarController">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="564.0" prefWidth="693.0" spacing="10.0">
+         <children>
+            <GridPane hgap="10.0" vgap="10.0">
+               <children>
+                  <Label prefHeight="20.0" prefWidth="81.0" text="Referencia:" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Proveedor:" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtReferencia" prefHeight="25.0" prefWidth="185.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <TextField fx:id="txtProveedor" onKeyReleased="#seleccionarProveedorKeyTyped" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                  <Label prefHeight="20.0" prefWidth="81.0" text="Folio:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtFolio" editable="false" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="86.0" GridPane.columnIndex="1" />
+                  <Label text="Recibio:" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtRecibio" prefHeight="25.0" prefWidth="193.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label text="Cantidad:" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtCantidad" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="177.0" GridPane.columnIndex="4" GridPane.rowIndex="3" />
+                  <DatePicker fx:id="campo_fecha" prefHeight="25.0" prefWidth="222.0" GridPane.columnIndex="4" />
+                  <Label prefHeight="0.0" prefWidth="81.0" text="Fecha:" GridPane.columnIndex="3">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Button fx:id="botonSeleccionarProducto" mnemonicParsing="false" onAction="#seleccionarProducto" text="..." GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <tooltip>
+                        <Tooltip text="Seleccionar producto" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="botonSEleccionarProveedor" mnemonicParsing="false" onAction="#seleccionarProveedor" text="..." GridPane.columnIndex="5" GridPane.rowIndex="1">
+                     <tooltip>
+                        <Tooltip text="seleccionar proveedor" />
+                     </tooltip>
+                  </Button>
+                  <Button fx:id="botonAgregarProducto" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#agregarProducto" prefHeight="25.0" prefWidth="125.0" text="Agregar producto " GridPane.columnIndex="4" GridPane.rowIndex="4" />
+                  <Label text="Costo:" GridPane.rowIndex="4">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="txtCosto" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField fx:id="txtProducto" onKeyReleased="#seleccionarProductoKeyTyped" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <Label fx:id="labelProducto" text="Producto:" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Proyecto:" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtProyecto" onKeyReleased="#seleccionarProyectoKeyTyped" GridPane.columnIndex="4" GridPane.rowIndex="2" />
+                  <Button fx:id="botonSEleccionarProyecto" mnemonicParsing="false" onAction="#seleccionarProyecto" text="..." GridPane.columnIndex="5" GridPane.rowIndex="2">
+                     <tooltip>
+                        <Tooltip text="seleccionar proveedor" />
+                     </tooltip>
+                  </Button>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="160.0" minWidth="10.0" prefWidth="83.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="300.0" minWidth="2.0" prefWidth="151.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="300.0" minWidth="10.0" prefWidth="43.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="300.0" minWidth="10.0" prefWidth="78.0" />
+                  <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" maxWidth="300.0" minWidth="10.0" prefWidth="167.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="300.0" minWidth="0.0" prefWidth="48.0" />
+               </columnConstraints>
+               <padding>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </padding>
+               <rowConstraints>
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+            </GridPane>
+            <TextField fx:id="txtBuscar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="218.0" promptText="Buscar...">
+               <VBox.margin>
+                  <Insets left="15.0" />
+               </VBox.margin>
+            </TextField>
+            <HBox>
+               <children>
+                  <TableView fx:id="tablaProductos" maxHeight="-Infinity" maxWidth="-Infinity" onMouseClicked="#seleccionarElementoMouseClicked" prefHeight="184.0" prefWidth="629.0">
+                     <columns>
+                        <TableColumn fx:id="columnaID" prefWidth="75.0" text="ID" />
+                        <TableColumn fx:id="columnaNombreCorto" prefWidth="92.0" text="Nombre corto" />
+                        <TableColumn fx:id="columnaDescripcion" prefWidth="112.0" text="Descripción" />
+                        <TableColumn fx:id="columnaUnidad" prefWidth="72.0" text="Unidad" />
+                        <TableColumn fx:id="columnaCantidad" prefWidth="94.0" text="Cantidad" />
+                        <TableColumn fx:id="columnaCosto" prefWidth="72.0" text="Costo" />
+                        <TableColumn fx:id="columnaTipo" prefWidth="75.0" text="Tipo" />
+                     </columns>
+                     <VBox.margin>
+                        <Insets left="15.0" />
+                     </VBox.margin>
+                  </TableView>
+                  <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" spacing="10.0">
+                     <children>
+                        <Button fx:id="botonEliminar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#eliminarProductoTabla" prefHeight="30.0" prefWidth="30.0">
+                           <tooltip>
+                              <Tooltip text="Eliminar" />
+                           </tooltip>
+                           <VBox.margin>
+                              <Insets top="25.0" />
+                           </VBox.margin>
+                        </Button>
+                        <Button fx:id="botonModificar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#modificarProductoTabla" prefHeight="30.0" prefWidth="30.0">
+                           <tooltip>
+                              <Tooltip text="Modificar" />
+                           </tooltip>
+                        </Button>
+                     </children>
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="15.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="91.0" prefWidth="634.0" spacing="50.0">
+               <children>
+                  <HBox alignment="CENTER" spacing="50.0">
+                     <children>
+                        <Label text="Motivo:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <HBox.margin>
+                              <Insets top="25.0" />
+                           </HBox.margin>
+                        </Label>
+                        <ComboBox fx:id="comboMotivo" onAction="#validarSeleccionComboMotivo" prefWidth="150.0">
+                           <HBox.margin>
+                              <Insets top="25.0" />
+                           </HBox.margin>
+                        </ComboBox>
+                     </children>
+                  </HBox>
+                  <VBox spacing="10.0">
+                     <children>
+                        <Label text="Observaciones:">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets left="15.0" />
+                           </VBox.margin>
+                        </Label>
+                        <TextArea fx:id="txtObservaciones" prefHeight="60.0" prefWidth="280.0">
+                           <VBox.margin>
+                              <Insets left="15.0" />
+                           </VBox.margin>
+                        </TextArea>
+                     </children>
+                  </VBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="15.0" />
+               </VBox.margin>
+            </HBox>
+            <AnchorPane prefHeight="53.0" prefWidth="650.0">
+               <children>
+                  <Button fx:id="botonGuardar" layoutX="498.0" layoutY="2.0" mnemonicParsing="false" onAction="#guardar" prefHeight="25.0" prefWidth="81.0" text="Guardar" />
+                  <Button fx:id="botonCancelar" layoutX="397.0" layoutY="2.0" mnemonicParsing="false" onAction="#cancelar" prefHeight="25.0" prefWidth="81.0" text="Cancelar" />
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</HBox>

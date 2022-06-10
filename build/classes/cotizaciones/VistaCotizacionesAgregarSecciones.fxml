@@ -1,0 +1,1060 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox prefHeight="626.0" prefWidth="769.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="cotizaciones.VistaCotizacionesAgregarSeccionesController">
+   <children>
+      <Label fx:id="labelNombre" text="Seccion 1- Ventiladores">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <VBox.margin>
+            <Insets left="10.0" top="10.0" />
+         </VBox.margin>
+      </Label>
+      <TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="654.0" prefWidth="781.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Equipos">
+               <content>
+                  <VBox prefHeight="541.0" prefWidth="747.0">
+                     <children>
+                        <GridPane hgap="10.0" prefHeight="82.0" prefWidth="771.0" vgap="10.0">
+                          <columnConstraints>
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="366.0" minWidth="10.0" prefWidth="86.0" />
+                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="692.0" minWidth="10.0" prefWidth="125.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="692.0" minWidth="10.0" prefWidth="50.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="692.0" minWidth="10.0" prefWidth="464.0" />
+                          </columnConstraints>
+                          <rowConstraints>
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                          </rowConstraints>
+                           <children>
+                              <Label text="Folio:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtFolioEquipos" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="120.0" GridPane.columnIndex="1" />
+                              <Label text="Descripción:" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextArea fx:id="txtDescripcion" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="55.0" prefWidth="632.0" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                 <GridPane.margin>
+                                    <Insets top="10.0" />
+                                 </GridPane.margin>
+                              </TextArea>
+                              <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" spacing="10.0" GridPane.columnIndex="3">
+                                 <children>
+                                    <Label alignment="CENTER" text="Nombre:">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="txtNombre" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="210.0" />
+                                 </children>
+                              </HBox>
+                              <Button fx:id="botonseleccionarEquipo" mnemonicParsing="false" onAction="#seleccionarEquipo" text="..." GridPane.columnIndex="2">
+                                 <tooltip>
+                                    <Tooltip text="Seleccionar equipos" />
+                                 </tooltip></Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="10.0" top="10.0" />
+                           </VBox.margin>
+                        </GridPane>
+                        <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="225.0" prefWidth="752.0" vgap="5.0">
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="87.0" minWidth="10.0" prefWidth="87.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="170.0" minWidth="10.0" prefWidth="151.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="105.0" minWidth="10.0" prefWidth="105.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="190.0" minWidth="10.0" prefWidth="146.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="116.0" minWidth="10.0" prefWidth="92.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="265.0" minWidth="10.0" prefWidth="152.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints minHeight="10.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                              <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <children>
+                              <TextField fx:id="txtModelo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="1">
+                                 <HBox.margin>
+                                    <Insets left="27.0" />
+                                 </HBox.margin>
+                              </TextField>
+                              <Label alignment="CENTER" text="Caudal:" GridPane.columnIndex="4">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" text="Modelo:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtCaudal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="5" />
+                              <TextField fx:id="txtMarca" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="3" />
+                              <Label alignment="CENTER" text="Marca:" GridPane.columnIndex="2">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" text="Presion:" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtPresion" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Label alignment="CENTER" text="Potencia:" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtPotencia" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                              <Label alignment="CENTER" text="Voltaje:" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtVoltaje" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="5" GridPane.rowIndex="1" />
+                              <Label alignment="CENTER" text="Amperaje:" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtAmperaje" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <Label alignment="CENTER" text="Gas refirgerante:" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtGasRefrigerante" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                              <Label alignment="CENTER" text="Capacidad:" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtCapacidad" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                              <Label alignment="CENTER" text="Costo:" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" text="Tipo:" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtCosto" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                              <TextField fx:id="txtTipo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <Label alignment="CENTER" text="Mult:" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtMult" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                              <Label alignment="CENTER" text="Costo R: " GridPane.columnIndex="4" GridPane.rowIndex="4">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtCostoR" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                              <Label alignment="CENTER" text="Descuento:" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" text="Cantidad:" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label alignment="CENTER" text="Venta:" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField fx:id="txtDescuento" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                              <TextField fx:id="txtCantidad" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                              <TextField fx:id="txtVenta" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+                              <Button fx:id="botonAgregarEquipo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="25.0" prefWidth="137.0" text="Agregar Equipo" GridPane.columnIndex="5" GridPane.rowIndex="6">
+                                 <GridPane.margin>
+                                    <Insets top="10.0" />
+                                 </GridPane.margin>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets left="10.0" top="30.0" />
+                           </VBox.margin>
+                        </GridPane>
+                        <HBox prefHeight="251.0" prefWidth="771.0">
+                           <VBox.margin>
+                              <Insets left="10.0" top="10.0" />
+                           </VBox.margin>
+                           <children>
+                              <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="212.0" prefWidth="679.0" spacing="10.0">
+                                 <children>
+                                    <TextField fx:id="txtBuscar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="209.0" promptText="Buscar..." />
+                                    <TableView fx:id="tablaEquipos" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="196.0" prefWidth="679.0">
+                                      <columns>
+                                        <TableColumn fx:id="ColumnaID" prefWidth="75.0" text="ID" />
+                                        <TableColumn fx:id="ColumnaNombre" prefWidth="119.0" text="Nombre" />
+                                          <TableColumn fx:id="ColumnaCosto" prefWidth="91.0" text="Costo" />
+                                          <TableColumn fx:id="ColumnaCostoR" prefWidth="91.0" text="Costo R" />
+                                          <TableColumn fx:id="ColumnaDescuento" prefWidth="91.0" text="Descuento" />
+                                          <TableColumn fx:id="ColumnaCantidad" prefWidth="91.0" text="Cantidad" />
+                                          <TableColumn fx:id="ColumnaVenta" prefWidth="91.0" text="Venta" />
+                                      </columns>
+                                       <VBox.margin>
+                                          <Insets bottom="10.0" />
+                                       </VBox.margin>
+                                    </TableView>
+                                 </children>
+                              </VBox>
+                              <VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="232.0" prefWidth="77.0" spacing="10.0">
+                                 <children>
+                                    <Button fx:id="botonModificarEquipos" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" />
+                                    <Button fx:id="botonEliminarEquipos" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" />
+                                    <Button fx:id="botonSalir" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="25.0" prefWidth="120.0" text="Salir">
+                                       <VBox.margin>
+                                          <Insets bottom="20.0" right="90.0" top="125.0" />
+                                       </VBox.margin>
+                                    </Button>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets bottom="10.0" top="35.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </content>
+          </Tab>
+          <Tab text="Productos">
+            <content>
+                  <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="591.0" prefWidth="767.0">
+                     <children>
+                        <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="109.0" prefWidth="647.0">
+                           <children>
+                              <Label text="ID:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets left="10.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label text="Descripcion:" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets left="10.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <TextField fx:id="txtIDProducto" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="108.0" GridPane.columnIndex="1" />
+                              <TextArea fx:id="txtDescripcion1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="644.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <Button fx:id="botonSeleccionarProducto" mnemonicParsing="false" onAction="#seleccionarProducto" text="..." GridPane.columnIndex="2">
+                                 <tooltip>
+                                    <Tooltip text="Seleccionar producto" />
+                                 </tooltip></Button>
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="190.0" minWidth="10.0" prefWidth="98.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="396.0" minWidth="10.0" prefWidth="114.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="430.0" minWidth="2.0" prefWidth="430.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="85.0" minHeight="10.0" prefHeight="48.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="114.0" minHeight="0.0" prefHeight="61.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                        </GridPane>
+                        <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="163.0" prefWidth="782.0">
+                           <children>
+                              <Label text="Nombre corto:">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets left="10.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label text="Unidad:" GridPane.columnIndex="2">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Subclase:" GridPane.rowIndex="1">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets left="10.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label text="Descuento:" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets left="10.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label text="Costo:" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets left="10.0" />
+                                 </GridPane.margin>
+                              </Label>
+                              <Label text="Mult:" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Costo R:" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Clase:" GridPane.columnIndex="4">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Cantidad:" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label text="Venta:" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <GridPane.margin>
+                                    <Insets />
+                                 </GridPane.margin>
+                              </Label>
+                              <TextField fx:id="txtNombreCorto" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="125.0" GridPane.columnIndex="1" />
+                              <TextField fx:id="txtClase" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="125.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                              <TextField fx:id="txtCosto1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="125.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                              <TextField fx:id="txtVenta1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="125.0" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                              <TextField fx:id="txtUnidad" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="125.0" GridPane.columnIndex="3" />
+                              <TextField fx:id="txtxSubClase" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="125.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                              <TextField fx:id="txtMulti" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="125.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                              <TextField fx:id="txtDescuento1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="125.0" GridPane.columnIndex="5" />
+                              <TextField fx:id="txtCostoR1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="125.0" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                              <TextField fx:id="txtCantidad1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="125.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                              <Button fx:id="botonAgregarProducto" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="29.0" prefWidth="125.0" text="Agregar producto" GridPane.columnIndex="5" GridPane.rowIndex="4">
+                                 <GridPane.margin>
+                                    <Insets right="10.0" top="10.0" />
+                                 </GridPane.margin>
+                              </Button>
+                           </children>
+                           <columnConstraints>
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="109.0" minWidth="10.0" prefWidth="103.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="211.0" minWidth="10.0" prefWidth="139.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="158.0" minWidth="0.0" prefWidth="63.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="295.0" minWidth="10.0" prefWidth="137.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="298.0" minWidth="10.0" prefWidth="79.0" />
+                              <ColumnConstraints hgrow="SOMETIMES" maxWidth="259.0" minWidth="10.0" prefWidth="140.0" />
+                           </columnConstraints>
+                           <rowConstraints>
+                              <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                              <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                           </rowConstraints>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                        </GridPane>
+                        <Separator prefWidth="200.0" />
+                        <Pane maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="292.0" prefWidth="600.0">
+                           <children>
+                              <TableView layoutX="14.0" layoutY="44.0" prefHeight="249.0" prefWidth="681.0">
+                                 <columns>
+                                    <TableColumn fx:id="columnaProducto" prefWidth="75.0" text="Producto" />
+                                    <TableColumn fx:id="columnaCantidad" prefWidth="87.0" text="Cantidad" />
+                                    <TableColumn fx:id="columnaCosto" prefWidth="87.0" text="Costo" />
+                                    <TableColumn fx:id="columnaMulti" prefWidth="78.0" text="Mult" />
+                                    <TableColumn fx:id="columnaCostoR" prefWidth="72.0" text="Costo R" />
+                                    <TableColumn fx:id="columnaVenta" prefWidth="98.0" text="Venta" />
+                                    <TableColumn fx:id="columnaObservaciones" prefWidth="183.0" text="Observaciones" />
+                                 </columns>
+                              </TableView>
+                              <TextField fx:id="txtBuscarProdcuto" layoutX="14.0" layoutY="2.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="225.0" promptText="Buscar..." />
+                              <VBox alignment="TOP_CENTER" layoutX="655.0" layoutY="31.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="275.0" prefWidth="90.0" spacing="10.0">
+                                 <children>
+                                    <Button fx:id="botonModificarProductos" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0">
+                                       <tooltip>
+                                          <Tooltip text="Modificar" />
+                                       </tooltip>
+                                    </Button>
+                                    <Button fx:id="botonEliminarProductos" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0">
+                                       <tooltip>
+                                          <Tooltip text="Eliminar" />
+                                       </tooltip>
+                                    </Button>
+                                    <Button fx:id="botonSalir1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="25.0" prefWidth="125.0" text="Salir">
+                                       <VBox.margin>
+                                          <Insets right="100.0" top="175.0" />
+                                       </VBox.margin>
+                                    </Button>
+                                 </children>
+                                 <padding>
+                                    <Insets left="60.0" right="10.0" top="15.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                           <VBox.margin>
+                              <Insets bottom="10.0" />
+                           </VBox.margin>
+                           <padding>
+                              <Insets bottom="20.0" />
+                           </padding>
+                        </Pane>
+                     </children>
+                  </VBox>
+            </content>
+          </Tab>
+            <Tab text="Mano de obra">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="607.0" prefWidth="769.0">
+                     <children>
+                        <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="611.0" prefWidth="808.0">
+                           <children>
+                              <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="117.0" prefWidth="808.0">
+                                 <children>
+                                    <GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="102.0" prefWidth="764.0">
+                                       <children>
+                                          <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Descripción General:">
+                                             <font>
+                                                <Font size="14.0" />
+                                             </font>
+                                          </Text>
+                                          <TextArea fx:id="txtDescripcionGeneral" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="56.0" prefWidth="764.0" GridPane.rowIndex="1" />
+                                       </children>
+                                       <columnConstraints>
+                                          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                       </columnConstraints>
+                                       <rowConstraints>
+                                          <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                                          <RowConstraints maxHeight="-Infinity" minHeight="1.0" prefHeight="80.0" vgrow="SOMETIMES" />
+                                       </rowConstraints>
+                                    </GridPane>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" top="5.0" />
+                                 </padding>
+                              </HBox>
+                              <Separator prefWidth="200.0" />
+                              <HBox prefHeight="322.0" prefWidth="808.0">
+                                 <children>
+                                    <TabPane prefHeight="290.0" prefWidth="786.0" tabClosingPolicy="UNAVAILABLE">
+                                       <tabs>
+                                          <Tab text="Contratistas">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="264.0" prefWidth="756.0">
+                                                   <children>
+                                                      <GridPane hgap="10.0" layoutX="9.0" layoutY="14.0" prefHeight="233.0" prefWidth="737.0" vgap="10.0">
+                                                         <children>
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ID Contratista:">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <TextField fx:id="txtContratistaPersonal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre:" GridPane.rowIndex="1">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <Button fx:id="seleccionarContratistaPersonal" mnemonicParsing="false" onAction="#seleccionarContratista" text="..." GridPane.columnIndex="2">
+                                                               <font>
+                                                                  <Font size="12.0" />
+                                                               </font>
+                                                            </Button>
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Razón Social:" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <TextField fx:id="txtRazonSocialPersonal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="247.0" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ID personal:" GridPane.rowIndex="2">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <Button fx:id="seleccionarPersonal" mnemonicParsing="false" onAction="#seleccionarPersonal" text="..." GridPane.columnIndex="2" GridPane.rowIndex="2">
+                                                               <font>
+                                                                  <Font size="12.0" />
+                                                               </font>
+                                                            </Button>
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Descripción:" GridPane.rowIndex="3">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Servicio" GridPane.rowIndex="5">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <TextField fx:id="txtServicioPersonal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                                               <font>
+                                                                  <Font size="12.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Costo:" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <TextField fx:id="txtCostoPersonal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Multiplicador:" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <TextField fx:id="txtMultiplicadorPersonal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Costo Real:" GridPane.rowIndex="6">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <TextField fx:id="txtCostoRealPersonal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cantidad:" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <TextField fx:id="txtCantidadPersonal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Descuento:" GridPane.columnIndex="4" GridPane.rowIndex="6">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <TextField fx:id="txtDescuentoPersonal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Utilidad:" GridPane.rowIndex="7">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <TextField fx:id="txtUtilidadPersonal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="P venta" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <TextField fx:id="txtPVentaPersonal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+                                                            <Button fx:id="BotonAgregarPersonal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="25.0" prefWidth="134.0" text="Agregar Personal" GridPane.columnIndex="5" GridPane.rowIndex="7">
+                                                               <font>
+                                                                  <Font size="12.0" />
+                                                               </font>
+                                                            </Button>
+                                                            <TextField fx:id="txtIDContratistaPersonal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="1" />
+                                                            <TextField fx:id="txtIDPersonal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                                                            <TextArea fx:id="txtDescripcionPersonal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="39.0" prefWidth="726.0" GridPane.rowIndex="4" />
+                                                         </children>
+                                                         <columnConstraints>
+                                                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="83.0" minWidth="10.0" prefWidth="83.0" />
+                                                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="168.0" minWidth="10.0" prefWidth="147.0" />
+                                                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="97.0" minWidth="10.0" prefWidth="65.0" />
+                                                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="144.0" minWidth="10.0" prefWidth="144.0" />
+                                                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="97.0" minWidth="10.0" prefWidth="81.0" />
+                                                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="137.0" minWidth="10.0" prefWidth="130.0" />
+                                                         </columnConstraints>
+                                                         <padding>
+                                                            <Insets bottom="5.0" left="5.0" right="5.0" />
+                                                         </padding>
+                                                         <rowConstraints>
+                                                            <RowConstraints maxHeight="-Infinity" minHeight="20.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                                            <RowConstraints maxHeight="-Infinity" minHeight="20.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                                            <RowConstraints maxHeight="-Infinity" minHeight="20.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                                            <RowConstraints minHeight="10.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                                                            <RowConstraints minHeight="40.0" prefHeight="20.0" vgrow="SOMETIMES" />
+                                                            <RowConstraints maxHeight="-Infinity" minHeight="20.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                                            <RowConstraints maxHeight="-Infinity" minHeight="20.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                                            <RowConstraints maxHeight="-Infinity" minHeight="20.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                                         </rowConstraints>
+                                                      </GridPane>
+                                                   </children>
+                                                   <padding>
+                                                      <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+                                                   </padding>
+                                                </AnchorPane>
+                                             </content>
+                                          </Tab>
+                                          <Tab text="Ococlimas">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                   <children>
+                                                      <VBox prefHeight="226.0" prefWidth="771.0">
+                                                         <children>
+                                                            <GridPane hgap="10.0" prefHeight="217.0" prefWidth="731.0" vgap="20.0">
+                                                               <children>
+                                                                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ID Servicio:">
+                                                                     <font>
+                                                                        <Font size="14.0" />
+                                                                     </font>
+                                                                  </Text>
+                                                                  <TextField fx:id="txtIDServiciosOcoclimas" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="1" />
+                                                                  <Button fx:id="botonseleccionarServicioOcoclimas" mnemonicParsing="false" onAction="#seleccionarServicioOcoclimas" text="..." GridPane.columnIndex="2">
+                                                                     <font>
+                                                                        <Font size="12.0" />
+                                                                     </font>
+                                                                  </Button>
+                                                                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ID Personal:" GridPane.rowIndex="1">
+                                                                     <font>
+                                                                        <Font size="14.0" />
+                                                                     </font>
+                                                                  </Text>
+                                                                  <TextField fx:id="txtIDPersonalOcoclimas" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                                  <Button fx:id="botonSeleccionarPersonalOcoclimas" mnemonicParsing="false" onAction="#seleccionarPersonalOcoclimas" text="..." GridPane.columnIndex="2" GridPane.rowIndex="1">
+                                                                     <font>
+                                                                        <Font size="12.0" />
+                                                                     </font>
+                                                                  </Button>
+                                                                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre del Servicio:" GridPane.columnIndex="3">
+                                                                     <font>
+                                                                        <Font size="14.0" />
+                                                                     </font>
+                                                                  </Text>
+                                                                  <TextField fx:id="txtNombreServicioOcoclimas" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="4" />
+                                                                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Nombre del Personal:" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                                                     <font>
+                                                                        <Font size="14.0" />
+                                                                     </font>
+                                                                  </Text>
+                                                                  <TextField fx:id="txtNombrePersonalOcoclimas" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                                                                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Descripción:" GridPane.rowIndex="2">
+                                                                     <font>
+                                                                        <Font size="14.0" />
+                                                                     </font>
+                                                                  </Text>
+                                                                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Costo:" GridPane.rowIndex="4">
+                                                                     <font>
+                                                                        <Font size="14.0" />
+                                                                     </font>
+                                                                  </Text>
+                                                                  <TextField fx:id="txtCostoOcoclimas" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                                                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Multiplicador:" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                                                     <font>
+                                                                        <Font size="14.0" />
+                                                                     </font>
+                                                                  </Text>
+                                                                  <TextField fx:id="txtMultiplicadorOcoclimas" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                                                                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Costo Real:" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                                                                     <font>
+                                                                        <Font size="14.0" />
+                                                                     </font>
+                                                                  </Text>
+                                                                  <TextField fx:id="txtCostoRealOcoclimas" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                                                                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cantidad D:" GridPane.rowIndex="5">
+                                                                     <font>
+                                                                        <Font size="14.0" />
+                                                                     </font>
+                                                                  </Text>
+                                                                  <TextField fx:id="txtCantidadDOcoclimas" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                                                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Descuento:" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                                                     <font>
+                                                                        <Font size="14.0" />
+                                                                     </font>
+                                                                  </Text>
+                                                                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Unidad:" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                                                                     <font>
+                                                                        <Font size="14.0" />
+                                                                     </font>
+                                                                  </Text>
+                                                                  <TextField fx:id="txtDescuentoOcoclimas" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                                                                  <TextField fx:id="txtUnidadOcoclimas" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+                                                                  <TextField fx:id="txtPVentasOcoclimas" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                                                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="P Venta:" GridPane.rowIndex="6">
+                                                                     <font>
+                                                                        <Font size="14.0" />
+                                                                     </font>
+                                                                  </Text>
+                                                                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cantidad P:" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                                                                     <font>
+                                                                        <Font size="14.0" />
+                                                                     </font>
+                                                                  </Text>
+                                                                  <TextField fx:id="txtCantidadPOcoclimas" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                                                                  <TextArea fx:id="txtDescripcionOcoclimas" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="41.0" prefWidth="752.0" GridPane.rowIndex="3" />
+                                                               </children>
+                                                               <columnConstraints>
+                                                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="360.0" minWidth="10.0" prefWidth="85.0" />
+                                                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="704.0" minWidth="10.0" prefWidth="149.0" />
+                                                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="704.0" minWidth="10.0" prefWidth="89.0" />
+                                                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="704.0" minWidth="10.0" prefWidth="156.0" />
+                                                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="704.0" minWidth="10.0" prefWidth="120.0" />
+                                                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="704.0" minWidth="10.0" prefWidth="93.0" />
+                                                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="704.0" minWidth="10.0" prefWidth="42.0" />
+                                                               </columnConstraints>
+                                                               <rowConstraints>
+                                                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                                                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                               </rowConstraints>
+                                                               <VBox.margin>
+                                                                  <Insets />
+                                                               </VBox.margin>
+                                                            </GridPane>
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                         </padding>
+                                                      </VBox>
+                                                   </children>
+                                                   <HBox.margin>
+                                                      <Insets left="10.0" top="10.0" />
+                                                   </HBox.margin></AnchorPane>
+                                             </content>
+                                          </Tab>
+                                          <Tab text="Vehículo">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                   <children>
+                                                      <GridPane hgap="10.0" layoutX="8.0" layoutY="9.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="241.0" prefWidth="772.0" vgap="10.0">
+                                                         <children>
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Sucursal:" GridPane.rowIndex="1">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Tipo:" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <TextField fx:id="txtTipoVehiculo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="120.0" GridPane.columnIndex="4" GridPane.rowIndex="1" />
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ID vehículo:">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <Button fx:id="botonSeleccionarVehiculo" mnemonicParsing="false" onAction="#seleccionarVehiculo" text="..." GridPane.columnIndex="2">
+                                                               <font>
+                                                                  <Font size="12.0" />
+                                                               </font>
+                                                            </Button>
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cantidad P:" GridPane.rowIndex="4">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <TextField fx:id="txtCostoRealVehiculo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                                               <font>
+                                                                  <Font size="12.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Costo:" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <TextField fx:id="txtCostoVehiculo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="119.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Multiplicador:" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <TextField fx:id="txtMultiplicadorVehiculo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="119.0" GridPane.columnIndex="3" GridPane.rowIndex="4" />
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Costo Real:" GridPane.rowIndex="3">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <TextField fx:id="txtCantidadPVehiculo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cantidad D:" GridPane.columnIndex="4" GridPane.rowIndex="3">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <TextField fx:id="txtCantidadVehiculo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="5" GridPane.rowIndex="3" />
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Descuento:" GridPane.columnIndex="4" GridPane.rowIndex="4">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <TextField fx:id="txtDescuentoVehiculo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="5" GridPane.rowIndex="4" />
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Utilidad:" GridPane.rowIndex="5">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <TextField fx:id="txtUtilidadVehiculo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="P venta:" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <TextField fx:id="txtPVentaVehiculo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="119.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                                                            <Button fx:id="BotonAgregarVehiculo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="25.0" prefWidth="134.0" text="Agregar vehículo" GridPane.columnIndex="5" GridPane.rowIndex="6">
+                                                               <font>
+                                                                  <Font size="12.0" />
+                                                               </font>
+                                                            </Button>
+                                                            <TextField fx:id="txtSucursalVehiculo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                                                            <TextField fx:id="txtIDVehiculo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="1" />
+                                                            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Gasto de gasolina (km/l)" GridPane.columnIndex="3">
+                                                               <font>
+                                                                  <Font size="14.0" />
+                                                               </font>
+                                                            </Text>
+                                                            <TextField fx:id="txtGastoGasolina" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="119.0" GridPane.columnIndex="4" />
+                                                         </children>
+                                                         <columnConstraints>
+                                                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="94.0" minWidth="10.0" prefWidth="94.0" />
+                                                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="237.0" minWidth="10.0" prefWidth="139.0" />
+                                                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="252.0" minWidth="10.0" prefWidth="87.0" />
+                                                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="365.0" minWidth="10.0" prefWidth="152.0" />
+                                                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="409.0" minWidth="10.0" prefWidth="106.0" />
+                                                            <ColumnConstraints hgrow="SOMETIMES" maxWidth="409.0" minWidth="10.0" prefWidth="140.0" />
+                                                         </columnConstraints>
+                                                         <padding>
+                                                            <Insets left="5.0" top="5.0" />
+                                                         </padding>
+                                                         <rowConstraints>
+                                                            <RowConstraints maxHeight="-Infinity" minHeight="20.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                                            <RowConstraints maxHeight="-Infinity" minHeight="20.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                                            <RowConstraints maxHeight="-Infinity" minHeight="20.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                                            <RowConstraints maxHeight="40.0" minHeight="26.0" prefHeight="26.0" vgrow="SOMETIMES" />
+                                                            <RowConstraints maxHeight="35.0" minHeight="20.0" prefHeight="35.0" vgrow="SOMETIMES" />
+                                                            <RowConstraints maxHeight="-Infinity" minHeight="20.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                                            <RowConstraints maxHeight="-Infinity" minHeight="20.0" prefHeight="40.0" vgrow="SOMETIMES" />
+                                                         </rowConstraints>
+                                                      </GridPane>
+                                                   </children></AnchorPane>
+                                             </content>
+                                          </Tab>
+                                          <Tab text="Genérico">
+                                             <content>
+                                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                                   <children>
+                                                      <VBox prefHeight="226.0" prefWidth="771.0">
+                                                         <children>
+                                                            <GridPane hgap="10.0" prefHeight="217.0" prefWidth="731.0" vgap="20.0">
+                                                               <children>
+                                                                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="ID Servicio Genérico:">
+                                                                     <font>
+                                                                        <Font size="14.0" />
+                                                                     </font>
+                                                                  </Text>
+                                                                  <TextField fx:id="txtIDServicioGenericos" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="1" />
+                                                                  <Button fx:id="botonSeleccionarServicioGenerico" mnemonicParsing="false" onAction="#seleccionarServicioGenerico" text="..." GridPane.columnIndex="2">
+                                                                     <font>
+                                                                        <Font size="12.0" />
+                                                                     </font>
+                                                                  </Button>
+                                                                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Descripción:" GridPane.rowIndex="1">
+                                                                     <font>
+                                                                        <Font size="14.0" />
+                                                                     </font>
+                                                                  </Text>
+                                                                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Costo:" GridPane.rowIndex="5">
+                                                                     <font>
+                                                                        <Font size="14.0" />
+                                                                     </font>
+                                                                  </Text>
+                                                                  <TextField fx:id="txtCostoGenericos" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                                                                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Multiplicador:" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                                                                     <font>
+                                                                        <Font size="14.0" />
+                                                                     </font>
+                                                                  </Text>
+                                                                  <TextField fx:id="txtMultiplicadorGenericos" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="3" GridPane.rowIndex="5" />
+                                                                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Costo Real:" GridPane.columnIndex="4" GridPane.rowIndex="5">
+                                                                     <font>
+                                                                        <Font size="14.0" />
+                                                                     </font>
+                                                                  </Text>
+                                                                  <TextField fx:id="txtCostoRealGenericos" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="5" GridPane.rowIndex="5" />
+                                                                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cantidad D:" GridPane.rowIndex="6">
+                                                                     <font>
+                                                                        <Font size="14.0" />
+                                                                     </font>
+                                                                  </Text>
+                                                                  <TextField fx:id="txtCantidadDGenericos" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                                                                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Descuento:" GridPane.columnIndex="2" GridPane.rowIndex="6">
+                                                                     <font>
+                                                                        <Font size="14.0" />
+                                                                     </font>
+                                                                  </Text>
+                                                                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Unidad:" GridPane.columnIndex="4" GridPane.rowIndex="6">
+                                                                     <font>
+                                                                        <Font size="14.0" />
+                                                                     </font>
+                                                                  </Text>
+                                                                  <TextField fx:id="txtDescuentoGenericos" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="3" GridPane.rowIndex="6" />
+                                                                  <TextField fx:id="txtUnidadGenericos" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="5" GridPane.rowIndex="6" />
+                                                                  <TextField fx:id="txtPVentasGenericos" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                                                                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="P Venta:" GridPane.rowIndex="7">
+                                                                     <font>
+                                                                        <Font size="14.0" />
+                                                                     </font>
+                                                                  </Text>
+                                                                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Cantidad P:" GridPane.columnIndex="2" GridPane.rowIndex="7">
+                                                                     <font>
+                                                                        <Font size="14.0" />
+                                                                     </font>
+                                                                  </Text>
+                                                                  <TextField fx:id="txtCantidadPGenericos" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="135.0" GridPane.columnIndex="3" GridPane.rowIndex="7" />
+                                                                  <TextArea fx:id="txtDescripcionGenericos" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="64.0" prefWidth="752.0" GridPane.rowIndex="3" />
+                                                               </children>
+                                                               <columnConstraints>
+                                                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="360.0" minWidth="10.0" prefWidth="123.0" />
+                                                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="704.0" minWidth="10.0" prefWidth="135.0" />
+                                                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="704.0" minWidth="10.0" prefWidth="90.0" />
+                                                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="704.0" minWidth="10.0" prefWidth="132.0" />
+                                                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="704.0" minWidth="10.0" prefWidth="87.0" />
+                                                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="704.0" minWidth="10.0" prefWidth="93.0" />
+                                                                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="704.0" minWidth="10.0" prefWidth="42.0" />
+                                                               </columnConstraints>
+                                                               <rowConstraints>
+                                                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="90.0" vgrow="SOMETIMES" />
+                                                                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                                                                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="60.0" vgrow="SOMETIMES" />
+                                                                  <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+                                                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                               </rowConstraints>
+                                                               <VBox.margin>
+                                                                  <Insets />
+                                                               </VBox.margin>
+                                                            </GridPane>
+                                                         </children>
+                                                         <padding>
+                                                            <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                                                         </padding>
+                                                      </VBox>
+                                                   </children></AnchorPane>
+                                             </content>
+                                          </Tab>
+                                       </tabs>
+                                    </TabPane>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="20.0" right="20.0" />
+                                 </padding>
+                              </HBox>
+                              <Separator prefWidth="200.0" />
+                              <HBox prefHeight="145.0" prefWidth="808.0">
+                                 <children>
+                                    <VBox prefHeight="175.0" prefWidth="688.0">
+                                       <children>
+                                          <AnchorPane prefHeight="31.0" prefWidth="537.0">
+                                             <children>
+                                                <TextField fx:id="txtBucar" layoutY="8.0" promptText="Buscar..." />
+                                             </children>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </AnchorPane>
+                                          <TableView maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="109.0" prefWidth="688.0">
+                                             <columns>
+                                                <TableColumn fx:id="columnaIdServicios" prefWidth="116.0" text="ID" />
+                                                <TableColumn fx:id="columnaNombreServicios" prefWidth="156.0" text="Nombre" />
+                                                <TableColumn fx:id="columnaDescripcionServicios" prefWidth="224.0" text="Descripción" />
+                                                <TableColumn fx:id="columnaCostoServicios" prefWidth="151.0" text="Costo" />
+                                             </columns>
+                                             <VBox.margin>
+                                                <Insets top="5.0" />
+                                             </VBox.margin>
+                                          </TableView>
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="120.0" prefWidth="64.0" spacing="10.0">
+                                       <children>
+                                          <Button fx:id="botonModificarPersonal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0">
+                                             <font>
+                                                <Font size="12.0" />
+                                             </font>
+                                             <tooltip>
+                                                <Tooltip text="Modificar " />
+                                             </tooltip>
+                                          </Button>
+                                          <Button fx:id="botonEliminarPersonal" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0">
+                                             <font>
+                                                <Font size="12.0" />
+                                             </font>
+                                             <tooltip>
+                                                <Tooltip text="Eliminar" />
+                                             </tooltip>
+                                          </Button>
+                                       </children>
+                                       <padding>
+                                          <Insets left="20.0" right="20.0" top="28.0" />
+                                       </padding>
+                                       <HBox.margin>
+                                          <Insets top="15.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="20.0" left="20.0" right="20.0" top="-10.0" />
+                                 </padding>
+                                 <VBox.margin>
+                                    <Insets />
+                                 </VBox.margin>
+                              </HBox>
+                              <Separator prefWidth="200.0" />
+                              <HBox alignment="TOP_RIGHT" minHeight="-Infinity" minWidth="-Infinity" prefHeight="16.0" prefWidth="808.0">
+                                 <children>
+                                    <Button fx:id="botonSalir2" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="25.0" prefWidth="128.0" text="Salir">
+                                       <font>
+                                          <Font size="12.0" />
+                                       </font>
+                                    </Button>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="20.0" left="20.0" right="40.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children></AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</VBox>

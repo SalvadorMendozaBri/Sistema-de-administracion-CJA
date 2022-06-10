@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox fx:id="hbox" prefHeight="429.0" prefWidth="1086.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="moduloPrestamos.VistaPrestamosController">
+   <children>
+      <VBox prefHeight="429.0" prefWidth="922.0" spacing="15.0" HBox.hgrow="ALWAYS">
+         <children>
+            <HBox alignment="BOTTOM_CENTER" prefHeight="41.0" prefWidth="882.0" spacing="10.0" VBox.vgrow="NEVER">
+               <children>
+                  <TextField alignment="TOP_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="25.0" prefWidth="179.0" promptText="Buscar..." />
+                  <ComboBox fx:id="comboPrestamos" onAction="#cambiarFiltro" prefWidth="150.0" />
+                  <Pane prefHeight="45.0" prefWidth="487.0" />
+                  <ImageView fx:id="icono" fitHeight="45.0" fitWidth="53.0" pickOnBounds="true" preserveRatio="true" />
+               </children>
+            </HBox>
+            <HBox VBox.vgrow="ALWAYS">
+               <children>
+                  <TableView fx:id="tablaPrestamos" prefHeight="329.0" prefWidth="894.0" tableMenuButtonVisible="true" HBox.hgrow="ALWAYS" VBox.vgrow="ALWAYS">
+                    <columns>
+                      <TableColumn fx:id="columnaFolio" editable="false" prefWidth="92.0" sortable="false" text="Folio prestamo" />
+                      <TableColumn fx:id="columnaHerramienta" editable="false" prefWidth="141.0" sortable="false" text="Herramienta prestada" />
+                        <TableColumn fx:id="columnaPrestadoA" editable="false" prefWidth="84.0" sortable="false" text="Prestado a " />
+                        <TableColumn fx:id="columnaFechaPrestamo" editable="false" prefWidth="125.0" sortable="false" text="Fecha de prestamo" />
+                        <TableColumn fx:id="columnaFechaDevolucion" editable="false" minWidth="0.0" prefWidth="127.0" sortable="false" text="Fecha de devolucion" />
+                        <TableColumn fx:id="columnaEstado" editable="false" minWidth="0.0" prefWidth="84.0" sortable="false" text="Estado" />
+                        <TableColumn fx:id="columnaSubclase1" editable="false" minWidth="0.0" prefWidth="0.0" sortable="false" text="Subclase 1" />
+                        <TableColumn fx:id="columnaObservacionesPres" editable="false" prefWidth="121.0" sortable="false" text="Observaciones de prestamo" />
+                        <TableColumn fx:id="columnaObservacionesDev" editable="false" prefWidth="105.0" sortable="false" text="Observaciones de entrega" />
+                    </columns>
+                  </TableView>
+               </children>
+            </HBox>
+         </children>
+         <padding>
+            <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+         </padding>
+      </VBox>
+      <VBox alignment="TOP_CENTER" prefHeight="429.0" prefWidth="164.0" spacing="20.0" HBox.hgrow="NEVER">
+         <children>
+            <Button fx:id="botonPrestamo" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#abrirNuevoPrestamo" prefHeight="25.0" prefWidth="135.0" text="Nuevo prestamo" />
+            <Button fx:id="botonDevolucion" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#abrirDevoluciones" prefHeight="25.0" prefWidth="135.0" text="Devolución" />
+            <Button fx:id="botonReposiciones" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" prefHeight="25.0" prefWidth="135.0" text="Reposiciones" />
+         </children>
+         <padding>
+            <Insets top="80.0" />
+         </padding>
+      </VBox>
+   </children>
+</HBox>

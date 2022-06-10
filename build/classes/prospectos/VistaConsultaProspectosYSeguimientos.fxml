@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<HBox xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="prospectos.VistaConsultaProspectosYSeguimientosController">
+   <children>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="635.0" prefWidth="739.0">
+         <children>
+            <GridPane hgap="10.0" vgap="10.0">
+               <children>
+                  <Label text="Folio:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtFolio" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="93.0" GridPane.columnIndex="1" />
+                  <Label text="Fecha de registro:" GridPane.columnIndex="2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <DatePicker fx:id="dateFechaRegistro" GridPane.columnIndex="3" />
+                  <Label text="Usuario que registra:" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtUsuario" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="134.0" minWidth="-Infinity" prefWidth="130.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="179.0" minWidth="-Infinity" prefWidth="175.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="143.0" minWidth="-Infinity" prefWidth="116.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="185.0" minWidth="-Infinity" prefWidth="178.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="58.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="31.0" minHeight="2.0" prefHeight="31.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <VBox.margin>
+                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+               </VBox.margin>
+            </GridPane>
+            <Separator prefHeight="0.0" prefWidth="670.0" />
+            <GridPane hgap="10.0" vgap="10.0">
+               <children>
+                  <Label text="Tipo:" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Correo:" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label GridPane.rowIndex="3">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtCorreo" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="194.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <ComboBox fx:id="comboTipo" prefHeight="25.0" prefWidth="172.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label text="Telefono:" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label text="Celular:" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtTelefono" prefHeight="25.0" prefWidth="194.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField fx:id="txtCelular" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="194.0" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+                  <Label text="Nombre:" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtNombre" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="244.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="135.0" text="Datos del prospecto.">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="134.0" minWidth="-Infinity" prefWidth="80.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="289.0" minWidth="-Infinity" prefWidth="170.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="262.0" minWidth="-Infinity" prefWidth="64.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="414.0" minWidth="-Infinity" prefWidth="376.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="58.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="58.0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="58.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="31.0" minHeight="2.0" prefHeight="31.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="15.0" top="10.0" />
+               </VBox.margin>
+            </GridPane>
+            <Separator prefHeight="0.0" prefWidth="670.0" />
+            <GridPane hgap="10.0" prefHeight="122.0" prefWidth="709.0" vgap="10.0" VBox.vgrow="ALWAYS">
+               <children>
+                  <Label text="Calle:" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets />
+                     </GridPane.margin>
+                  </Label>
+                  <TextField fx:id="txtCalle" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label text="Número:" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtNumero" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="90.0" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+                  <Label text="C.P:" GridPane.columnIndex="4" GridPane.rowIndex="2">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtCP" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="132.0" GridPane.columnIndex="5" GridPane.rowIndex="2" />
+                  <Label text="Empresa:" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtEmpresa" onKeyReleased="#seleccionarEmpresaKeyTyped" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Button fx:id="botonSeleccionarEmpresa" mnemonicParsing="false" onAction="#seleccionarEmpresa" text="..." GridPane.columnIndex="2" GridPane.rowIndex="1" />
+                  <Label maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="20.0" prefWidth="135.0" text="Datos de la empresa.">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="134.0" minWidth="-Infinity" prefWidth="80.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="231.0" minWidth="-Infinity" prefWidth="204.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="158.0" minWidth="-Infinity" prefWidth="62.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="262.0" minWidth="-Infinity" prefWidth="121.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="262.0" minWidth="10.0" prefWidth="34.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="262.0" minWidth="10.0" prefWidth="156.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="58.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="58.0" minHeight="10.0" prefHeight="38.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="66.0" minHeight="2.0" prefHeight="45.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="15.0" right="15.0" top="15.0" />
+               </VBox.margin>
+            </GridPane>
+            <HBox alignment="CENTER_LEFT" prefHeight="39.0" prefWidth="724.0" spacing="10.0">
+               <children>
+                  <Label text="Municipio:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="17.0" prefWidth="5.0" />
+                  <TextField fx:id="txtMunicipio" prefHeight="25.0" prefWidth="155.0" />
+                  <Label text="Estado:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtEstado" prefHeight="25.0" prefWidth="155.0" />
+                  <Label text="País:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtPais" prefHeight="25.0" prefWidth="155.0" />
+               </children>
+               <VBox.margin>
+                  <Insets bottom="10.0" left="15.0" />
+               </VBox.margin>
+            </HBox>
+            <Separator prefHeight="0.0" prefWidth="737.0" />
+            <Label text="¿Como se entero de nosotros?">
+               <font>
+                  <Font size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="15.0" />
+               </VBox.margin>
+            </Label>
+            <TextArea fx:id="txtAreaEntero" prefHeight="73.0" prefWidth="709.0">
+               <VBox.margin>
+                  <Insets left="15.0" right="15.0" />
+               </VBox.margin>
+            </TextArea>
+            <GridPane hgap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="70.0" prefWidth="723.0" vgap="10.0">
+               <children>
+                  <Label text="Vendedor encargado:">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="20.0" prefWidth="115.0" text="Division asignada:" GridPane.columnIndex="3">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label GridPane.rowIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtVendedor" maxHeight="-Infinity" maxWidth="-Infinity" minWidth="-Infinity" onKeyReleased="#seleccionarVendedorKeyTyped" prefHeight="25.0" prefWidth="180.0" GridPane.columnIndex="1" />
+                  <Label text="Status:" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ComboBox prefHeight="25.0" prefWidth="169.0" GridPane.columnIndex="4" />
+                  <ComboBox prefHeight="25.0" prefWidth="193.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Button fx:id="botonSeleccionarVendedor" mnemonicParsing="false" onAction="#seleccionarVendedor" text="..." GridPane.columnIndex="2" />
+               </children>
+               <columnConstraints>
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="137.0" minWidth="-Infinity" prefWidth="137.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="289.0" minWidth="-Infinity" prefWidth="181.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="289.0" minWidth="0.0" prefWidth="31.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="262.0" minWidth="-Infinity" prefWidth="115.0" />
+                  <ColumnConstraints hgrow="SOMETIMES" maxWidth="414.0" minWidth="-Infinity" prefWidth="219.0" />
+               </columnConstraints>
+               <rowConstraints>
+                  <RowConstraints maxHeight="58.0" minHeight="10.0" prefHeight="29.0" vgrow="SOMETIMES" />
+                  <RowConstraints maxHeight="31.0" minHeight="2.0" prefHeight="31.0" vgrow="SOMETIMES" />
+               </rowConstraints>
+               <VBox.margin>
+                  <Insets left="15.0" right="15.0" top="10.0" />
+               </VBox.margin>
+            </GridPane>
+            <HBox alignment="CENTER_RIGHT" prefHeight="51.0" prefWidth="737.0" spacing="15.0">
+               <children>
+                  <Button fx:id="botonModificar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#modificar" prefHeight="25.0" prefWidth="90.0" text="Modificar" />
+               </children>
+               <VBox.margin>
+                  <Insets left="15.0" right="15.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <Separator orientation="VERTICAL" prefHeight="539.0" prefWidth="2.0" style="-fx-background-color: #F2F2F2;" />
+      <VBox prefHeight="539.0" prefWidth="532.0" spacing="10.0">
+         <children>
+            <Label text="Seguimiento de prospecto">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtBuscar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="25.0" prefWidth="237.0" promptText="Buscar" />
+            <TableView fx:id="tablaSeguimientos" onKeyReleased="#seleccionarEnter" onMouseClicked="#seleccionarMouse" prefHeight="570.0" prefWidth="596.0">
+               <columns>
+                  <TableColumn prefWidth="75.0" text="Folio" />
+                  <TableColumn prefWidth="143.0" text="Fecha Registro" />
+                  <TableColumn prefWidth="222.0" text="Vendedor Encargado" />
+                  <TableColumn minWidth="4.0" prefWidth="154.0" text="Status" />
+               </columns>
+            </TableView>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="10.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <children>
+                  <Button fx:id="botonAgregarSeguimiento" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#agregarSeguimiento" prefHeight="25.0" prefWidth="139.0" text="Agregar seguimiento" />
+                  <Button fx:id="botonModificar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#modificar" prefHeight="25.0" prefWidth="139.0" text="Modificar" />
+                  <Button fx:id="botonEliminar" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#eliminar" prefHeight="25.0" prefWidth="139.0" text="Eliminar" />
+                  <Button fx:id="botonAgregarPreoportunidad" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#agregarPreoportunidad" prefHeight="25.0" prefWidth="149.0" text="Agregar preoportunidad" />
+               </children>
+            </HBox>
+         </children>
+         <HBox.margin>
+            <Insets left="10.0" right="10.0" top="15.0" />
+         </HBox.margin>
+      </VBox>
+   </children>
+</HBox>
